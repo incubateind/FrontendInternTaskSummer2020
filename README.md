@@ -23,7 +23,7 @@ Each applicant is supposed to complete the following tasks, your assessment will
 
 ## Contents of the folder
 + The project directory.
-+ The entire Login Page with its CSS files should be present.
++ The entire Login Page with all its dependent files should be present.
 + A text file that contains proper documentation. The documentation should contain:
     - Your Full Name.
     - Your College, stream of study and year of study.
