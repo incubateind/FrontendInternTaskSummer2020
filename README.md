@@ -4,7 +4,7 @@
 Read the following steps and guidelines properly for proper submission of your Task. Missing out any step or performing it wrongly can lead to unsuccessful submission. 
 
 ## TASK
-The task for the applicants is to stylize and modify the Login Form present in the folder in the master branch of the repository by the name of - LoginPageTask.
+**The task for the applicants is to stylize and modify the Login Form present in the folder in the master branch of the repository by the name of - LoginPageTask.**
 Each applicant is supposed to complete the following tasks, your assessment will be done on the basis of completion of each task.
 + Beautify the Login Form (use of Bootstrap 4 will be preffered, for styling the page).
 + Check the validations in the form (eg. the type of field should be set to email for Email field).
