@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+  background-image: url(bg_image.jpg);
+
+}
+
+h2{
+  color: rgb(57, 214, 36);
+}
+.logo{
+  width: 250px;
+}
+
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: rgb(211, 218, 113);
+  color: rgb(66, 182, 66);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.log-form input{
+  padding-top: 10px;
+  width: 100%;
+  border: none;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(49, 51, 59);
+}
+
+.login-box input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(15, 158, 177);
+    font-size: 16px;
+}
+
+.btn {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  font-size: x-large;
+  color: rgb(69, 26, 226);
+}
+
+.btn:hover {
+  background-color: rgb(22, 8, 219);
+  color: rgb(235, 226, 226);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
