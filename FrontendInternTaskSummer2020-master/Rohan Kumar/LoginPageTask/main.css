@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+
+
+
+.detail{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  
+
+}
+
+.detailheader h2{
+  padding-top: 20px;
+  margin-bottom: 30px;
+  font-size: x-large;
+  font-weight: bold;
+  color:rgb(57, 200, 200)!important;
+}
+/* section before  */
+.detail:before{
+ content: " ";
+ position: absolute;
+ top: 10%;
+ bottom: 19%;
+ left: 0%;
+ right: 0%;
+ opacity: 0.9;
+ z-index: -1;
+ background: linear-gradient(215deg,rgb(250, 141, 40) 54%,white 14%);
+}
+/* container text color and size */
+.cont{
+  color: rgb(27, 106, 118);
+  font-size: 1.7vh;
+  
+}
+
+
+ .form-button button{
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255)!important;
+    background: transparent;
+
+ }
+ /* anchor tag in submit button */
+ form a{
+  color: rgb(255, 255, 255)!important;
+
+ }
+
+ /* form button + form hover when we hover the form then only button will be displayed  */
+
+ form:hover .form-button button{
+    color: rgb(244, 248, 248);
+    background-color: turquoise;
+    box-shadow: turquoise;
+    transition: ease;
+    text-decoration: none;
+ }
+
+
+ ::placeholder{
+   
+     font-size: 0.6rem;
+     color: transparent;
+ }
+
+ /* form text alignment and trasition delay timing */
+form {
+  text-align: left!important;
+  transition:0.5s;
+  transition-timing-function: ease-in;
+  
+}
+.size input {
+  height:27px!important;
+  
+}
+
+.mid{
+  margin-left: 40px;
+
+}
+
+
+form:hover {
+  transform: translatey(-30px);
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px  rgba(86, 171, 190, 0.3);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px -1px 53px -7px  rgba(97, 165, 180, 0.3);
+}
+
+
