@@ -3,3 +3,18 @@ Your Full Name:                                         Shrist Das
 Your College, stream of study and year of study.:       IIIT Bhubaneswar, Information Technology, Third year
 Your Current Location (City of residence):              Mumbai, India
 
+README:
+Responsive Login Page creating using Bootsrap 4 with proper validations
+Redirects to main website upon successful credentials entered.
+Basic Animations added using CSS
+
+Correct credentials for sucessive login:
+    username: "Shrist",
+		email:    "abc@abc.com",
+		password: "abcdef@12",
+		phone:     7064181875
+or
+    username: "IncubateInd",
+		email:    "def@def.com",
+		password: "qwerty@12",
+		phone:    8327770914
