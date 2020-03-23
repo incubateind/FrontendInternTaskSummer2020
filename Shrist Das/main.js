@@ -40,7 +40,7 @@ function check()
 		 return;
 	}
 	}
-	alert("Invalid attempt")
+	alert("Invalid Attempt.Please Try Again")
 }
 
 //validation for input fields.
