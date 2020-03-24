@@ -1,0 +1,65 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+
+<div class="jumbotron" id="a1">
+  <div class="container">
+    <h1 class="display-4">Enter Your Details</h1>
+    <p></p>
+    <p></p>
+  </div>  
+</div>
+
+
+
+
+  <div class="done">
+    <div class="log-form">
+      <!-- <h2>Enter your details</h2> -->
+      <form method="POST" action="confirm.html" onsubmit="return validateSubmit()">
+        *<input type="text" title="username" placeholder="Username" id="username" required />
+        <p class = "error" id="error_username"></p>
+
+        *<input type="email" title="email" placeholder="E-mail" id="email">
+        <p class = "error" id="error_email"></p>
+
+        *<input type="text" title="phone" placeholder="Mobile Number" id="phone_number">
+        <p class = "error" id="error_phone"></p>
+
+        *<input type="password" title="password" placeholder="Password" id="password" />
+        <p class = "error" id="error_password"></p>
+
+        *<input type="password" title="cnfpassword" placeholder="Confirm Password" id="cnf_password"/>
+        <p class = "error" id="error_cnfpassword"></p>
+
+        *<textarea name="message" id="message" cols="35" rows="4" placeholder="Enter Message"></textarea>
+        <p class = "error" id="error_message"></p>
+
+        <p>*Age</p>
+        <input type="radio" id="above" name="age" value="above">
+        <label for="above">Above 18</label>
+        <input type="radio" id="below" name="age" value="below">
+        <label for="below">Below 18</label>
+        <p class = "error" id="error_age"></p>
+
+        <button type="submit" class="button button1">Submit</button>
+      </form>
+    </div>
+  </div>  <!-- Beautify Ends -->
+
+  <script src="main.js"></script>
+</body>
+</html>
