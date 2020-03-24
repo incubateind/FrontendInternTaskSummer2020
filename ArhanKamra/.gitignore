@@ -3,23 +3,23 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 
-gulp/
+# gulp/
 node_modules/
-src/
-.babelrc
-bower.json
-browserconfig.xml
-gulpfile-boilerplate.js
-gulpfile.js
-package-lock.json
-.editorconfig
-.gitattributes
-.htaccess
-404.html
-humans.txt
-robots.txt
-LICENSE.txt
-package.json
-LoginPageTask/
-desktop.ini
-src/pug
+# src/
+# .babelrc
+# bower.json
+# browserconfig.xml
+# gulpfile-boilerplate.js
+# gulpfile.js
+# package-lock.json
+# .editorconfig
+# .gitattributes
+# .htaccess
+# 404.html
+# humans.txt
+# robots.txt
+# LICENSE.txt
+# package.json
+# LoginPageTask/
+# desktop.ini
+# src/pug
