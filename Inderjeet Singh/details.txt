@@ -1,0 +1,4 @@
+Name->Inderjeet Singh
+College->Shri Ram Institute Kashipur
+Stream->Bca  final year
+Location->Bazpur,Uttarakhand 
