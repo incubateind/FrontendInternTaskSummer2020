@@ -34,7 +34,7 @@
         method="get"
         name="myform"
         id="validate_form"
-        onsubmit="return formSubmit()"
+        onsubmit="return validateForm()"
       >
         <input
           type="text"
@@ -89,14 +89,14 @@
         <input type="radio" id="below" name="age" value="below" />
         <label for="below">Below 18</label>
         <div><p id="messageR"></p></div>
-        <button type="submit" id="btn">Submit</button>
+        <button type="submit" id="btn" onclick="formSubmit()">Submit</button>
       </form>
     </div>
 
     <form method="get" name="myForm">
       <label for="remember">Remember me</label>
       <input type="checkbox" name="previousDetails" id="remember" />
-      <span id="forgot">Forgot password?</span>
+      <span style="color: black;" id="forgot">Forgot password?</span>
     </form>
 
     <!-- BEAUTIFY ENDS -->

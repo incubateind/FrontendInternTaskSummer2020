@@ -120,4 +120,9 @@ button[type='submit']:hover {
   border-radius: 10px;
   margin-top: 10px;
   color: white;
+  cursor: pointer;
+}
+
+span {
+  color: red;
 }

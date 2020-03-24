@@ -24,7 +24,7 @@
 
       <!-- FORM FOR VALIDATION -->
 
-      <form method="get" name="myform" id="validate_form" onsubmit="return formSubmit()">
+      <form method="get" name="myform" id="validate_form" onsubmit="return validateForm()">
         <input type="text" title="username" placeholder="username" name="username" id="userN" autocomplete="off">&nbsp;<span id="messageT"></span>
         <input type="email" name="email" title="email" placeholder="emails" id="emailAdr" autocomplete="off">&nbsp;<span id="messageE"></span>
         <input type="number" name="number" id="contactNum" placeholder="contact no." autocomplete="off">&nbsp;<span id="messageN"></span>
@@ -37,14 +37,14 @@
         <input type="radio" id="below" name="age" value="below">
         <label for="below">Below 18</label>
         <div><p id="messageR"></p></div>
-        <button type="submit" id="btn">Submit</button>
+        <button type="submit" id="btn" onclick="formSubmit()">Submit</button>
       </form>
     </div>
 
     <form method="get" name="myForm">
       <label for="remember">Remember me</label>
       <input type="checkbox" name="previousDetails" id="remember">
-      <span id="forgot">Forgot password?</span>
+      <span style="color: black;" id="forgot">Forgot password?</span>
     </form>
 
     <!-- BEAUTIFY ENDS -->
