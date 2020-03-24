@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body onload="init()">
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+     <center><div class="col" id="field"><p></p></div></center>
+  <div class ="box" id="box">
+  <div class="log-form">
+    <h2>Enter your details</h2>
+    <form  id="login" action="registerd.html" onsubmit="return validate()">
+    	<div class = "rows">
+    		<div class = "col1">
+      <label for="username">Username</label>
+  </div>
+   <div class = "col2">
+      <input type="text" title="username" placeholder=" Enter Username" required />
+    </div>
+
+</div>
+ <div class = "rows">
+    <div class = "col1">
+      <label for="email">E-mail</label>
+  </div>
+  <div class = "col2">
+      <input id="email" type="email" onkeyup="fun4()" title="email" placeholder="Enter Email" required />
+  </div>
+</div>
+     <div class="col3" id="ema"><p></p></div>
+
+ <div class = "rows">
+  <div class = "col1">
+      <label for="pass">Password</label>
+  </div>
+   <div class = "col2">
+      <input type="password" id="pass" title="password" onfocus="fun7()" onblur="fun5()" onkeyup="fun6()" placeholder="Enter Password" required />
+  </div>
+</div>
+   <div id="psw">
+  	<h3>Password must contain the following:</h3>
+ <p id="letter" class="invalid">Atleast one lowercase letter</p>
+  <p id="capital" class="invalid">Atleast one uppercase letter</p>
+  <p id="number" class="invalid">Atleast one number</p>
+  <p id="length" class="invalid">Minimum 6 to maximum 8 characters</p>
+</div>
+ <div class = "rows">
+  <div class = "col1">
+      <label for="cnfpassword">Confirm Password</label>
+  </div>
+  <div class = "col2">
+      <input type="password" id="cnfpass" onkeyup="fun2()" title="cnfpassword" placeholder="Confirm Password" required />
+  </div>
+</div>
+  <div class="col3" id="cnfp"><p></p></div>
+ <div class = "rows">
+    <div class = "col1">
+      <label for = "phn_no">Phone Number</label>
+  </div>
+    <div class = "col2">
+      <input title="phn_no" id="phn" onkeyup="fun1()" placeholder="Enter Mobile Number" / > <br>
+  </div>
+</div>
+      <div class="col3" id="res"><p></p></div>
+
+<div class = "rows">
+    <div class = "col1">
+      <label>Message</label>
+  </div>
+   <div class = "col2">
+      <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message" /></textarea>
+  </div>
+   </div>
+    <div class = "rows">
+       <div class = "col1">
+      <p>Age</p>
+  </div>
+      <div class = "col2"><br>
+      <input type="radio" id="above" name="age" value="above" required />
+      <label for="above">Above 18</label>
+      <input type="radio" id="below" name="age" value="below" />
+      <label for="below">Below 18</label>
+  </div>
+  </div>
+      <button id="btn" type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+   
+</div>
+  <!-- Beautify Ends -->
+</body>
+</html>
