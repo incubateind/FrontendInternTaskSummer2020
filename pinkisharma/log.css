@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 45px;
+    color: aliceblue;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+h1::onmouseover .form-control {
+    background: transparent;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid solid gray;
+    font-size: 22px;
+    height: 40px;
+    padding: 18px;
+    color: gray;
+}
+
+label {
+    color: lightblue;
+}
