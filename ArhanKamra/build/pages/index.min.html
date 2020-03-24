@@ -1,0 +1,54 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LoginForm</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- <script src="src/js/main.js" defer></script> -->
+  </head>
+  <body>
+    <!-- COMPANY LOGO -->
+
+    <a href="https://www.incubateind.com/" target="_self"><img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" title="Official Website" alt="incubateind site address link"></a>
+
+    <!-- Beautify This -->
+
+    <div class="log-form">
+      <h2>Enter your details</h2>
+
+      <!-- FORM FOR VALIDATION -->
+
+      <form method="get" name="myform" id="validate_form" onsubmit="return formSubmit()">
+        <input type="text" title="username" placeholder="username" name="username" id="userN" autocomplete="off">&nbsp;<span id="messageT"></span>
+        <input type="email" name="email" title="email" placeholder="emails" id="emailAdr" autocomplete="off">&nbsp;<span id="messageE"></span>
+        <input type="number" name="number" id="contactNum" placeholder="contact no." autocomplete="off">&nbsp;<span id="messageN"></span>
+        <input type="password" title="password" placeholder="password" name="password" id="pass" autocomplete="off">&nbsp;<span id="messageP"></span>
+        <input type="password" title="cnfpassword" placeholder="confirm password" name="password confirmation" id="cfnPass" autocomplete="off">&nbsp;<span id="messageCP"></span>
+        <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message"></textarea>&nbsp;<span id="messageTx"></span>
+        <p>Age</p>
+        <input type="radio" id="above" name="age" value="above">
+        <label for="above">Above 18</label>
+        <input type="radio" id="below" name="age" value="below">
+        <label for="below">Below 18</label>
+        <div><p id="messageR"></p></div>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </div>
+
+    <form method="get" name="myForm">
+      <label for="remember">Remember me</label>
+      <input type="checkbox" name="previousDetails" id="remember">
+      <span id="forgot">Forgot password?</span>
+    </form>
+
+    <!-- BEAUTIFY ENDS -->
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
