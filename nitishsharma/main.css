@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background:rgb(255, 204, 204);
+  position: relative;
+  margin:0 auto;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+/* Adding a hover effect over button*/
+
+.btn:hover{
+  background:lightskyblue;
+}
+
+/*Modifying icons*/
+
+.fas{
+  padding:10px;
+}
+
+.logo:hover{
+  transform: scale(1.05);
+}
+i:hover{
+transform: scale(1.25);
+}
+
+input:hover{
+  transform: scale(1.05);
+}
+
+h2:hover{
+  transform: scale(1.25);
+}
+
+.log-form:hover{
+
+  border:2px brown solid;
+}
