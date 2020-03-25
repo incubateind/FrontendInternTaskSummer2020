@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  margin: 2px solid black;
+  margin-top: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+   margin: 200px solid black;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+#forma{
+  display: none;
+}
+#imsg{
+  align:center;
+  size: 200px;
+  width: 300px;
+  margin: 450px;
+  margin-left: 600px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+#buthide{
+  align:center;
+  margin-left: 650px;
+  margin-top: 200px;
+  font-size: 30px;
+  padding: 20px;
+  padding-right: 50px;
+}
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */

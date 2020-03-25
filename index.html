@@ -1,0 +1,245 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script>
+$(document).ready(function(){
+  $("#buthide").click(function(){
+    $("#forma").show();
+    $("#buthide").hide();
+  });
+  $("#touch").click(function(){
+    $("#forma").hide();
+    $("#buthide").show();
+  })
+  
+});
+</script>
+
+  <style>
+
+                .thumbnail img
+                {
+                    width:100%;
+                }
+                .thumbnail{
+                    padding:0;
+                }
+  
+        body{
+            background: rgb(139,139,139);
+        }
+        #landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+        #landing-header h1 {
+  color: #fff;
+}
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+.slideshow li:nth-child(1) { 
+  background-image:  
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(http://i.imgur.com/emvhOnb.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+  animation-delay: 40s; 
+}
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+  .carousel-inner img {
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%); /* make all photos black and white */
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}
+
+.carousel-caption h3 {
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+</style>
+  
+</head>
+
+
+
+
+
+          
+ 
+    <body>
+           
+ 
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" id="imsg" class="logo" alt="">
+  <!-- Beautify This -->
+  <br>
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <div id="touch">   
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+<br>
+<br>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      
+      <img src="img1.png" alt="img1">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img2.jpg" alt="img2">
+      <div class="carousel-caption">
+       
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="img3.jpg" alt="img3">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+     <div class="item">
+      <img src="img4.jpg" alt="img4">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div>
+  <button class="btn btn-large btn-success" id="buthide">Login</button> 
+  <div id="forma">
+    <div id="disp">
+   <div class="log-form">
+    <h2>Enter your details</h2>
+    <div class="jumbotron">
+      
+
+    <div class="form-group">
+      <input type="text" id="username" title="username" class="form-control" placeholder="username" required />
+      <div id="user"></div>
+      <input type="email" id="email" title="email" class="form-control" placeholder="email" required>
+      <div id="eail">
+      </div>
+      <input type="password" id="password" title="password" class="form-control" placeholder="password" />
+      <div id="pas"></div>
+      <input type="password" id="cpassword" title="cnfpassword" class="form-control" placeholder="confirm password" />
+      <div id="cpp"></div>
+      <input type="text" id="phone" title="number" class="form-control" placeholder="contact number" required>
+      <div id="numb">
+      </div>
+      <textarea name="message" id="message" class="form-control" cols="35" rows="4" placeholder="enter message"></textarea>
+      <p>Age</p>
+      <input type="radio" id="above" name="age" value="above">
+      <label for="above">Above 18</label>
+      <input type="radio" id="below" name="age" value="below">
+      <label for="below">Below 18</label>
+      <div class="container">
+        <center>
+      <button type="submit" onclick="validateinput()" class="btn btn-danger btn-lg">Login</button>
+    </center>
+    </div>
+   
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+  <!-- Beautify Ends -->
+</div>
+</body>
+
+</html>
