@@ -1,6 +1,6 @@
 Name - Nitish Sharma
 
-College - Vellore Institute of Technology, Vellore
+College - Vellore Institute of Technology, Vellore , Tamil Nadu
 
 Stream - B.Tech in Computer Science
 
