@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 80%;
+  min-width: 320px;
+  max-width: 475px;
+  background: transparent;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 1em;
+  padding-bottom: 70px;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+.btn btn-primary:hover{     /* To hover the submit button */
+ background: #3570dc;
+}
+textarea{
+  resize: none;     
+}
+.wall{                        /*details of the wall image*/
+  height: 100vh;
+  width: 100%;
+  background-image: url(sky.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  overflow-x: hidden;
+}
+.road{                         /*details of the road image*/
+  height: 50px;
+  width: 500%;
+  display: block;
+  background-image: url(road.jpg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: road 5s linear infinite;
+}
+@keyframes road                   
+{                           /*added keyframes to get the animations*/
+  100%{
+    transform:translateX(-3000px);          /*translateX means motion in X axis*/
+  }
+}
+.city{                            /*details of the city image*/
+  height: 160px;
+  width: 400%;
+  background-image: url(city1.png);
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: city 20s linear infinite;
+}
+@keyframes city
+{                                /*added keyframes to get the animations*/               
+  100%{
+    transform: translateX(-1400px);           /*translateX means motion in X axis*/
+  }
+}
+.car{                                    /*details of the car div element*/
+  width: 150px;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  position: absolute; 
+  z-index: 2;
+}
+.car img{                             /*details of the city image*/
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+@keyframes car{
+  100%{                                 /*added keyframes to get the animations*/
+    transform: translateY(-2px);
+  }
+  50%{
+    transform: translateY(2px);
+  }
+  0%{
+    transform: translateY(-2px);
+  }
+}
+.wheel{                             /*details of the wheel div element*/
+  left: 50%;
+  bottom: 73px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.wheel img{                         /*details of the wheel image*/
+  width: 27px;
+  height: 27px;
+  animation: wheel 1s linear infinite;
+}
+.back-wheel{                              /*details of the back wheel image*/
+  left: -62px;
+  position: absolute;
+}
+.front-wheel{                             /*details of the front wheel image*/
+  left: 30px;
+  position: absolute;
+}
+@keyframes wheel{                         /*added keyframes to get the animations*/
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query for different screen sizes */
+@media only screen and (min-width : 320px) {
+  .log-form{ width: 20% }
+}
+
+@media only screen and (min-width : 480px) {
+  .log-form{ width: 50% }
+}
+
+@media only screen and (min-width : 768px) {
+  .log-form{ width: 70% }
+}
+
+@media only screen and (min-width : 992px) {
+  .log-form{ width: 90% }
+}
