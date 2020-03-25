@@ -1,1 +1,98 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="main.js"></script>
 
+  <!--Adding font kit-->
+
+  <script src="https://kit.fontawesome.com/177240bf70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Adding a jumbotron for image-->
+
+    <div class="jumbotron">
+    <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+    </div>
+
+    <!-- Beautify This -->
+    <div class="card-body log-form">
+    <h2>Login</h2>
+
+    <!-- Adding a form using bootstrap -->
+
+    <form action="success.html" method="GET">
+        <div class="form-group row">
+            <i class="fas fa-portrait fa-2x col-form-label col-sm-2"></i>
+            <div class="col-sm-10">
+                <input type="text" id="inputuser" class="form-control form-control-md input" placeholder="username" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <i class="fas fa-at fa-2x col-form-label col-sm-2"></i>
+            <div class="col-sm-10">
+                <input type="email" id="inputemail" class="form-control form-control-sm input" placeholder="email@.com" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <i class="fas fa-phone-alt fa-2x col-sm-2 col-form-label"></i>
+            <div class="col-sm-10">
+                <input type="text" id="inputphone" class="form-control form-control-sm input" placeholder="Phone" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <i class="fas fa-key fa-2x col-form-label col-sm-2"></i>
+            <div class="col-sm-10">
+                <input type="password" id="inputpass" class="form-control form-control-sm input" placeholder="Password" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <i class="fas fa-check-circle fa-2x col-sm-2 col-form-label"></i>
+            <div class="col-sm-10">
+                <input type="password" id="inputconfirmpass" class="form-control form-control-sm input" placeholder=" Confirm Password" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message" class="form-control"></textarea>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Age</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Above 18
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Below 18
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <a href="success.html">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </a>
+            </div>
+          </div>
+    </form>
+  </div> 
+  <!-- Beautify Ends -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+</body>
+</html>
