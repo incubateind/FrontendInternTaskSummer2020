@@ -1,0 +1,9 @@
+Name : kumar aryan
+College: IIIT Jabalpur
+Location: jabalpur
+year:  1st yr.
+Home Town : fatehpur
+Age:18
+D.O.B: 01.01.2002
+email: 2019276@iiitdmj.ac.in
+Ph: +91 8853635005

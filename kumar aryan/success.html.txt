@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body style="background-image: url('success.jpg'); background-repeat: no-repeat; background-size: 95% 7700%;">
+    </body>
+</html>
