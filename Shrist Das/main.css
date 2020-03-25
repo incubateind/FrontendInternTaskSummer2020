@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(120deg,#790909,#8e44ad);
+}
+h4{
+  text-align: center;
+  font-family: "Times New Roman" ;
+  color:hsl(0, 00%, 0%);
+}
+.fa{
+  position: relative;
+  padding: 5px 20px 20px 0px;
+  font-size:20px;
+  text-align: center;
+  cursor: pointer;  
+}
+h1{
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Times New Roman"
+  font-size: 10px;
+  margin: 10px;
+  line-height: 50px;
+}
+/*Animation*/
+.heading{
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Times New Roman"
+  font-size: 100px;
+  margin: 05px;
+  line-height: 10px;
+  font-weight: bold;
+  position: relative;
+  animation: animate 10s infinite;
+}
+@keyframes animate {
+  0%   {left:0px; top:0px;}
+  25%  { left:100px; top:0px;}
+  50%  { left:100px; top:100px;}
+  75%  { left:0px; top:100px;}
+  100% { left:0px; top:0px;}
+}
