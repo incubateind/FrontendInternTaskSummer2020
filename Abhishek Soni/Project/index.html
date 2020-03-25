@@ -1,0 +1,76 @@
+
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    
+</head>
+<body>
+    <div class="logo-container">
+    <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+    </div>
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h2 class="heading">Enter your details</h2>
+    <form id="login-form">  
+      <input id="myusername" class="input-fields" type="text" title="username" placeholder="username" name="username">
+      <input id="myemail" class="input-fields" type="email" title="email" placeholder="email" name="email">
+      <input id="mynumber" class="input-fields" type="number" title="pnumber" placeholder="phone number" name="pnumber">
+      <input id="mypassword" class="input-fields" type="password" title="password" placeholder="password" name="password">
+      <input id="mypasswordconfirm" class="input-fields" type="password" title="cnfpassword" placeholder="confirm password" name="cnfpassword">  
+      <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message"></textarea>
+      <div class="age-box">
+      <table>  
+        <tr>  
+          <th><p class="age-para">Age</p></th>
+          <th><input type="radio" id="above" name="age" value="above">
+              <label for="above">Above 18</label></th>
+          <th><input type="radio" id="below" name="age" value="below">
+              <label for="below">Below 18</label></th>
+        </tr> 
+      </table>
+      </div>
+        
+      <div class="input-fields">
+         <div class="row-md-9 row-md-offset-3">
+             <div id="messages"></div>
+         </div>
+      </div>
+        
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+    
+    
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="main.js"></script> 
+
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#login-form').bootstrapValidator();
+    });
+    </script>
+    
+    
+    
+</body>
+</html>
