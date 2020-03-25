@@ -1,0 +1,89 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+
+
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+
+  <div class="log-form">
+    
+    <h1>Enter your details</h1>
+    <form method="POST">
+
+        <div class="form-group">
+            <label for="uname" class="label">Username</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <span class="error-form" id="username_error_message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+            <span class="error-form" id="email_error_message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="pwd" class="label">Password</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <span class="error-form" id="pwd_error_message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="cpwd" class="label">Confirm Password</label>
+            <input type="password" class="form-control" id="cpwd" placeholder="Confirm password" name="cpswd" required>
+            <span class="error-form" id="cpwd_error_message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="pno" class="label">Phone Number</label>
+            <input type="tel" class="form-control" id="pno" placeholder="+91-" name="phno" required>
+            <span class="error-form" id="phonenumber_error_message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="dateinput" class="label">Date of Birth</label>
+          <input id="dateinput" class="form-control" placeholder="Click here to select date" required>
+        </div>
+
+       
+        
+        <button type="submit" id="btn1" class="btn btn-primary">Submit</button>
+        <button id="btn2" class="btn btn-primary" disabled>
+            <span class="spinner-border spinner-border-sm"></span>
+            
+          </button>
+
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+
+
+
+ 
+</body>
+</html>
