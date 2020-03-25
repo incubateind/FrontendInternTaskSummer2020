@@ -1,0 +1,204 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.font-poppins {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+.page-wrapper {
+  min-height: 100vh;
+}
+
+#index {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  background-image: linear-gradient( 179.4deg,  rgba(236,167,219,1) 31.2%, rgba(146,220,219,1) 90.9% );
+}
+#success
+{
+ background-color: #232f3f;
+}
+h2 {
+  color: rgb(0, 110, 255);
+  font-weight: 500;
+  font-size: 30px;
+}
+h3 {
+  text-align: center;
+  color: rgb(0, 110, 255);
+  font-weight: 500;
+  font-size: 25px;
+  animation: glow2 2s ease-out infinite alternate;
+}
+.pad100 {
+  padding-top: 100px;
+}
+.pad10 {
+  padding-top: 10px;
+}
+.pad180 {
+  padding-top: 180px;
+}
+.wrapper {
+  margin: 0 auto;
+}
+
+.wrapper700px {
+  max-width: 700px;
+}
+.wrapper600px {
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 33px;
+  font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 18px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #57b846;
+}
+
+.btn:hover {
+  background: #cc0a0a;
+}
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 30px;
+  border-bottom:2px solid #dadada;
+  font-family: inherit;
+}
+input:focus { 
+  animation: glow 500ms ease-out infinite alternate;
+	border-bottom-color: rgb(218, 255, 11);
+	outline: none;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 10px;
+}
+.input-field{
+  padding: 10px 0;
+  font-size: 15px;
+  color: #313131;
+  background: transparent;
+}
+.card {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.card-3 {
+  background: white;
+  margin-bottom: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  display: table;
+}
+
+.card-3 .card-heading {
+  background: url("https://incubateind.com/images/IncubateIND%20Black.png") center/cover no-repeat;
+  background-size: 250px;
+  filter: drop-shadow(7px 7px 8px #00d4ff);
+  display: table-cell;
+  width: 50%;
+}
+
+.card-3 .card-body {
+  padding: 50px 60px;
+  padding-bottom: 60px;
+  display: table-cell;
+}
+
+@media (max-width: 767px) {
+  .card-3 {
+    display: block;
+  }
+  .card-3 .card-heading {
+    display: block;
+    width: 100%;
+    padding-top: 400px;
+    background-position: center center;
+  }
+  .card-3 .card-body {
+    display: block;
+    width: 100%;
+    padding: 37px 30px;
+    padding-bottom: 45px;
+  }
+}
+.form-control
+{
+  margin-top:10px ;
+}
+@keyframes glow {
+  0% {
+  border-bottom-color:rgb(18, 18, 241);
+  }	
+  50%
+{
+  border-bottom-color: white;
+}
+  100% {
+  border-bottom-color:rgb(245, 21, 21);
+  }
+}
+
+@keyframes glow2 {
+  0% {
+    color:rgb(206, 18, 159);
+  }
+20% {
+  color:rgb(178, 38, 190);
+}
+40% {
+  color:rgb(56, 63, 197);
+}
+60% {
+  color:rgb(9, 123, 146);
+}
+80% {
+  color:rgb(14, 133, 119);
+}
+100% {
+  color:rgb(34, 16, 133);
+}
+}
