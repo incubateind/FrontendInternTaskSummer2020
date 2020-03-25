@@ -1,0 +1,123 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <video autoplay="" loop="" id="video-background" class="video">
+        <source src="https://storage.coverr.co/videos/coverr-matukad-island-1558720187591?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTcyNDg0ODMyfQ.iePAwahyOV0FoHyMEei4ghH6VsYFhfgZmzVLBnO0SzE" type="video/mp4">
+    </video>
+
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+  <div class="log-form spacing">
+    <h2>Login Form</h2><br>
+    <!--form start-->
+    <img src="avg.jpg" class="avatar">
+    <form  name="submit" class="needs-validation" onsubmit="return validation()" novalidate>
+
+  <!--username-input-starts-->
+      <div class="row">
+      <div class="col-sm-6">
+      <i class="fas fa-user-tie icon"></i>
+      <input type="text"  id="username" class="form-control" placeholder="username" />&nbsp&nbsp&nbsp&nbsp
+      <p id="uservalidationmessage" style="color:red; font-size:12px;"></p>
+    </div>
+    <!--username-input-ends-->
+
+  <!--email-input-starts-->
+    <div class="col-sm-6">
+      <i class="fas fa-envelope icon"></i>
+      <input type="email" id="email" class="form-control" placeholder="email" required/><br>
+      <p id="emailvalidationmessage" style="color:red; font-size:12px;"></p>
+    </div>
+    </div>
+   <!--email-input-ends-->
+
+
+  <!--password-input-starts-->
+    <div class="row">
+    <div class="col-sm-6">
+      <i class="fas fa-lock prefix icon"></i>
+      <input type="password" id="password" class="form-control"  placeholder="password" required/>&nbsp&nbsp&nbsp&nbsp
+      <p id="passwordvalidationmessage" style="color:red; font-size:12px;"></p>
+    </div>
+    <!--password-input-ends-->
+
+    <!--confirm-password-input-starts-->
+    <div class="col-sm-6">
+      <i class="fas fa-lock prefix icon"></i>
+      <input type="password" id="cnfpassword" class="form-control"  placeholder="confirm password" required /><br>
+      <p id="cnfpasswordvalidationmessage" style="color:red; font-size:12px;"></p>
+    </div>
+    </div>
+    <!--confirm-password-input-ends-->
+
+      <!--mobile-number-input-starts-->
+    <div class="row">
+    <div class="col-sm-12">
+      <i class="fas fa-mobile-alt icon"></i>
+      <input type="tel" id="mbnumber" class="form-control" placeholder="mobile number" required />
+      <p id="mbnumbervalidationmessage" style="color:red; font-size:12px;"></p><br>
+    </div>
+    </div>
+    <!--mobile-number-ends-->
+
+    <!--message-box-starts-->
+      <p class="text">Additional info.</p><br>
+      <textarea name="message" id="message" class="form-control" cols="35" rows="4" placeholder="enter message"></textarea>
+      <br>
+      <!--message-box-ends-->
+
+      <!--age-selections-box-starts-->
+      <table class="age">
+        <tr>
+          <td><p>Age</p></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="above" name="age" value="above">
+          </td>
+          <td>
+            <label for="above">Above 18</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          </td>
+          <td>
+          <input type="radio" id="below" name="age" value="below">
+          </td>
+          <td>
+          <label for="below">Below 18</label>
+          </td>
+      </tr>
+      </table><br><br><br>
+        <!--age-selections-box-ends-->
+
+      <button type="submit"  id="myButton" class="btn btn-outline-success btn-block btn-radius" value="submit"><a id="success_page" href="#"></a>submit</button><br>
+     <!--social-icons-start-->
+      <div class="col-md-12">
+          <ul class="social-network social-circle">
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <!--social-icons-ends-->
+    </form>
+    <!--form-ends-->
+  </div>
+  <!-- Beautify Ends -->
+
+  <script src="main.js" charset="utf-8"></script> <!--main-js-->
+
+</body>
+</html>
