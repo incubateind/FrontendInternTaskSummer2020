@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+
+body {
+ background-color: #cccccc;
+ background-image: url("1.jpg");
+  background-size: cover;
+}
+
+.log-form{
+  margin: 10px 1px 1px 1px;
+  padding-top: absolute;
+  background-color: #87CEFA;
+  max-height: 560px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  font-family: ar;
+  box-sizing: border-box;
+}
+
+  form{
+  border: none;  
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], [type=password], [type=email], textarea{
+  width: 70%;
+  padding: 12px;
+  margin: 1px;
+  border: 1px #AFEEEEA;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  cursor: pointer;
+  /*width:100%;position:relative;background-color:#f7f7f7;border:1px solid #e6e6e6;border-radius:10px;*/
+
+}
+
+/* hover inputs elements and textareas */
+input[type=text]:hover {
+    width: 70%;
+  padding: 12px;
+  background-color: #ccc;
+  margin: 1px 1px 1px 1px;
+  border:1px solid blue;
+  border-radius: 10px;
+}
+input[type=password]:hover {
+  width: 70%;
+  padding: 12px;
+  background-color: #ccc;
+  margin: 1px 1px 1px 1px;
+  border:1px solid blue;
+  border-radius: 10px;
+}
+input[type=email]:hover {
+  width: 70%;
+  padding: 12px;
+  background-color: #ccc;
+  margin: 1px 1px 1px 1px;
+  border:1px solid blue;
+  border-radius: 10px;
+}
+textarea:hover {
+  width: 70%;
+  padding: 12px;
+  background-color: #ccc;
+  margin: 1px 1px 1px 1px;
+  border:1px solid blue;
+  border-radius: 10px;
+}
+
+
+/*style submit button */
+button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+  border:1px solid black;
+  border-radius: 10px;
+}

@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#form_position {
+    opacity: 90%;
+}
+
+#form_position:hover {
+    opacity:100%;
+}
+
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.user-img img{
+    height:75px;
+    width:75px;
+}
+
+#form_position{
+    left: 50%;
+    right: 40%;       
+    position: fixed;
+    margin:auto;
+}
+#mb-3{
+    border-top: 1px solid white;
+}
+
+#username{
+    border-radius: 25px;
+}
+#email{
+    border-radius: 25px;
+}
+#password{
+    border-radius: 25px;
+}
+#confirm_password{
+    border-radius: 25px;
+}
+#message{
+    border-radius: 25px;
+}
+#register{
+    border-radius: 25px;
+}
+#phone{
+    border-radius: 25px;
+}

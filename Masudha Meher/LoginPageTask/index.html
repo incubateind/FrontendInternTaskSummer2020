@@ -1,0 +1,104 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+
+  <script src="main.js"></script>
+</head>
+<body>
+    
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+    <div class="container">
+  <!-- Beautify This -->
+  <div id ="form_position" class="log-form">
+      <div class="col-sm-12">
+          <div class="col-12 user-img">
+              <img src="clip.png">
+          </div>
+    <h2>Enter your details</h2>
+    <hr class="mb-3">
+    <!--Form begins-->
+    <form>
+        <div class="row">
+            <!--Username-->
+            <div class="col-lg-3">Username</div>
+                <div class="form-group col-lg-9">
+                    <input type="text" class="form-control" id="username" placeholder="Type your username" name="username" required>
+                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"> </i>
+                    </div>
+            </div>
+
+        <!--Email-->
+        <div class="row">
+            <div class="col-lg-3">Email</div>
+                <div class="form-group col-lg-9">
+                    <input type="email" class="form-control" id="email" placeholder="Type your email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+            </div>
+        
+        <!--Phone Number-->
+        <div class="row">
+            <div class="col-lg-3">Phone Number</div>
+                <div class="form-group col-lg-9">
+                    <input type="text" class="form-control" id="phone" placeholder="Type your phone number" name="phone" pattern="[0-9]{10}" required>
+                </div>
+        </div>
+        
+        <!--Password-->
+        <div class="row">
+            <div class="col-lg-3">Password</div>
+                <div class="form-group col-lg-9">
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password" required>
+                </div>
+        </div>
+        
+        <!--Re-type Password-->
+        <div class="row">
+            <div class="col-lg-3">Re-type Password</div>
+                <div class="form-group col-lg-9">
+                    <input type="password" class="form-control" id="confirm_password" placeholder="Re-type your password" name="confirm_password" required>
+                </div>
+        </div>
+        
+        <!--Message-->
+        <div class="row">
+            <div class="col-lg-3">Message</div>
+                <div class="form-group col-lg-9">
+                    <textarea class="form-control" name="message" id="message" cols="35" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+        </div>
+        
+        <!--Age-->
+        <div class="row">
+            <div class="col-lg-3">Age</div>
+                <div class="form group col-lg-9">
+                    <input type="radio" id="above" name="age" value="Above 18">
+                    <label for="above">Above 18</label>
+                    &nbsp; &nbsp; &nbsp;
+                    <input type="radio" id="below" name="age" value="Below 18">
+                    <label for="below">Below 18</label>
+                </div>
+        </div>
+        
+        <!--Submit Button-->
+        <div> 
+            <input type="submit" class="btn btn-success" id="register" name="create" value="Submit" href="#">
+        </div>
+    </form>
+    <!--Form ends-->
+      </div>
+  </div>
+</div>
+    
+  <!-- Beautify Ends -->
+</body>
+</html>

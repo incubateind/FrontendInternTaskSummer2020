@@ -10,11 +10,12 @@ body {
 }
 .log-form {
   width: 100%;
-  min-width: 320px;
-  max-width: 475px;
+  min-width:240px;
+  max-width:500px;
+  height:690px;
   background: #fff;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -32,10 +33,62 @@ h2 {
   -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
   box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
 }
+.form-heading
+{
+
+  text-align:center;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+}
 
 form {
   display: block;
   text-align: center;
   width: 100%;
 }
+.submit-button
+{
+  margin-top:15px;
+  width:100%;
+  text-align:center;
+  padding:6px;
+  font-size:15px;
+
+}
+.hero-section
+{
+  background-color:white;
+}
+.nav-section
+{
+  background-color:#646464;
+  padding:3px;
+  position: fixed;
+}
+li.nav-item 
+{
+color:white;
+
+}
+div.form-group
+{
+  margin-top:1.4rem;
+  padding:5px;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: black;
+}
+ 
+input.form-control
+{
+  
+  box-shadow: 0.5px 0.2px #5b5b5b; 
+}
+
+textarea.form-control
+{
+  box-shadow: 0.5px 0.2px #5b5b5b; 
+}
+
 /* ========================WRITE YOUR CSS FROM HERE======================== */

@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'open sans', helvetica, arial, sans;
+}
+.logo {
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.3);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.3);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.3);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+/* DEFAULT FORMATTING */
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* GIVE LOGO A GRADIENT BACKGROUND */
+
+body {
+  background: linear-gradient(to bottom, lightblue, blue);
+  background-repeat: no-repeat;
+}
+
+h2 {
+  margin-bottom: 21px;
+}
+
+/* GIVE STYLES TO INPUT FIELDS */
+
+#userN,
+#emailAdr,
+#contactNum,
+#pass,
+#cfnPass,
+#textA {
+  display: block;
+  margin-left: 140px;
+  line-height: 1.8;
+  transition: width 400ms linear;
+}
+
+/* GIVE DIFFERENT STYLES TO INPUT FIELDS WHEN MOUSE HOVERS OVER THEM */
+
+#userN:hover,
+#emailAdr:hover,
+#contactNum:hover,
+#pass:hover,
+#cfnPass:hover,
+#textA:hover {
+  width: 159px;
+}
+
+#forgot:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 21px;
+}
+
+/* STYLING SUBMIT BUTTON */
+
+button[type='submit'] {
+  background-color: #22f253;
+  color: #f23022;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: border-radius 400ms ease-in-out,
+    background-color 400ms ease-in-out, width 400ms ease-in-out,
+    height 400ms ease-in-out, margin-top 400ms ease-in-out,
+    color 400ms ease-in-out;
+}
+
+/* STYLING SUBMIT BUTTON WHEN MOUSE HOVERS OVER IT */
+
+button[type='submit']:hover {
+  background-color: #16c751;
+  width: 110px;
+  height: 33px;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+span {
+  color: red;
+}
