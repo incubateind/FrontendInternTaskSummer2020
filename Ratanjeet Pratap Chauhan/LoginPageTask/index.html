@@ -1,0 +1,47 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h2>Enter your details</h2>
+
+    <!-- Function to check Whether both passwords is same or not -->
+    <script type="text/javascript">
+    function confirmPass() {
+        var pass = document.getElementById("pass").value
+        var confPass = document.getElementById("cnfpass").value
+        if(pass != confPass) {
+            alert('Wrong confirm password !');
+        }
+    }
+    </script>  
+
+    <form action="Registered.html">
+      <input type="text" title="username" placeholder="username" >
+      <input type="email" title="email" placeholder="email" >
+      <input type="password" id="pass" title="password" placeholder="password" />
+      <input type="password" id="cnfpass" title="cnfpassword" placeholder="confirm password" onblur="confirmPass()" />
+      <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message"></textarea>
+      <p>Age 
+      <input type="radio" id="above" name="age" value="above">
+      <label for="above">Above 18</label>
+      <input type="radio" id="below" name="age" value="below">
+      <label for="below">Below 18</label></p>
+      <button type="submit" class="btn" />Submit</button>
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+</body>
+</html>
