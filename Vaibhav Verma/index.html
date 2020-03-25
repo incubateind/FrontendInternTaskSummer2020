@@ -1,0 +1,61 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+<div><img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+</div>
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h2>Enter your details</h2>
+    <form>
+    	<table>
+    		<tr>
+    			<td class="label">Name:</td>
+    			<td class="input"><input type="text" title="username" placeholder="Enter username" /></td>
+    		</tr>
+    		<tr>
+    			<td class="label">Phone Number:</td>
+    			<td class="input"><input type="phone" title="phonenumber" placeholder="Enter phone number" pattern="[1-9]{1}[0-9]{9	}"/></td>
+    		</tr>
+    		<tr>
+    			<td class="label">Email:</td>
+    			<td class="input"><input type="email" title="email" placeholder="Enter email"></td>
+    		</tr>
+    		<tr>
+    			<td class="label">Password:</td>
+    			<td class="input"><input type="password" title="password" placeholder="Enter password" /></td>
+    		</tr>
+    		<tr>
+    			<td class="label">Confirm Password:</td>
+    			<td class="input"><input type="password" title="cnfpassword" placeholder="Confirm password" /></td>
+    		</tr>
+    		<tr>
+    			<td class="label">Message:</td>
+    			<td class="input"><textarea name="message" id="message" cols="25" rows="3" placeholder="Enter message"></textarea></td>
+    		</tr>
+    		<tr>
+    			<td class="label">Age:</td>
+    			<td> 
+				    <input type="radio" id="above" name="age" value="above" style="box-shadow: 0px 0px; border-width: 2px; border-color: black; margin-left: -25px;">
+				    <label for="above">Above 18</label>
+				    <input type="radio" id="below" name="age" value="below" style="box-shadow: 0px 0px;">
+				    <label for="below">Below 18</label>
+				</td>
+			</tr>
+      	</table>
+      	<button type="submit" class="btn" colspan="2">Submit</button>
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+</body>
+</html>
