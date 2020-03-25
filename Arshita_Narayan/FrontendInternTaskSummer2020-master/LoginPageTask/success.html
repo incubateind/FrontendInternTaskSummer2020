@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Success</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<style>
+  *
+  {
+    text-align:center;
+  }
+  p{
+    
+    font-size:72px;
+  }
+  #Message
+  {
+    font-size: 72px;
+  }
+  .logout
+  {
+    display:flex;
+    justify-content: flex-end;
+  }
+  body{
+    background-color:rgb(13, 29, 29);
+    color: rgb(198, 207, 235);
+  }
+  .btn
+  {
+    background-color: rgb(198, 207, 235);
+    color:#000;
+  }
+  
+</style>
+<body>
+ 
+  <div class="LogoutContainer row no-gutters">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 logout">
+      <button class="btn"><a href="index.html">Log Out</a></button>
+    </div>
+  </div>
+  <p style="font-size: 36px">Login Successful!</p><br>
+<p>Hello,
+  <b id ="Message"></b></p>
+
+
+
+
+  <!-- Internal JavaScript -->
+  <script>
+   
+   const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username');
+    document.getElementById('Message').innerHTML=username;
+    function remove_queries(url) {
+      return url.split(/[?#]/)[0];
+    }
+    remove_queries(window.location.href);
+   
+
+
+  </script>
+  </body>
+  
+  </html>

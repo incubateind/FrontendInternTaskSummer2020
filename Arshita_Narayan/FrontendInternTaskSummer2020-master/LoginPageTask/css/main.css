@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+/* .log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+*/
+h2 {
+  text-align: center;
+} 
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  /* text-align: center; */
+  padding:2em;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+.log-form{
+
+  background-color:rgb(13, 29, 29);
+}
+.log-form h2
+{
+  color:#fff;
+  font-variant: small-caps;
+}
+form
+{
+  color:#fff;
+}
+.row
+{
+  margin:5px 0px;
+}
+
+input
+{
+  /* color:rgb(41, 39, 39); */
+   
+  height:40px!important;
+  font-size:14px!important;
+  margin-bottom:5px;
+}
+.age-lavel
+{
+  padding: 0px 20px;
+}
+/* .log-form{
+  animation: come-down 5s ease 1;
+   
+} */
+@keyframes come-down
+{
+  0%
+  {
+    transform:scale(1);
+  }
+  50%{
+    transform: scale(0.85);
+  }
+  100%
+  {
+    transform:scale(1);
+  }
+}
+.btn
+{
+  background-color: rgb(177, 222, 230);
+}
+#prevBtn
+{
+  background: #fff;
+}
+
+@media (max-width : 767px)
+{
+  .prev-button-container
+  {
+    display:flex!important;
+    justify-content:flex-end!important;
+  }
+}
+ 
+
+
+.next-button-container
+{
+  display:flex;
+  justify-content:flex-end;
+}
+.marker-container
+{
+  padding-top:30px;
+  display: flex;
+  justify-content: center;
+}
+#pass_match
+{
+
+  display: none;
+}
+#username , #email
+{
+  position: relative;
+}
+
+
+/* for floating labels*/
+:root {
+  --input-padding-x: .5rem;
+  --input-padding-y: .5rem;
+}
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /*Override default `<label>` margin*/
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group .form-control:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2/ 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group .form-control:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) /3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+.form-label-group textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group textarea::placeholder {
+  color: transparent;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #fafafa;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  /* box-shadow: 0 0 0 0.2rem rgba(97, 24, 131, 0.25); */
+}
+/* marks the password strength */
+#pass_strength
+{
+  width:100%;
+  height:5px;
+   margin-top:5px;
+  display: none;
+  
+}
+.red-line
+{
+  background-image:linear-gradient(to right , #a01b1b 33.33% , #fff 33.33% , #fff 100%);
+  
+}
+.yellow-line
+{
+  background-image:linear-gradient(to right ,#f1f153 66.66%, #fff 66.66% , #fff 66%);
+}
+.green-line
+{
+  background-color:#068843;
+}
+.red-shadow
+{
+  box-shadow: 0 0 0 0.2rem #a01b1b2f!important;
+}
+.yellow-shadow
+{
+  box-shadow: 0 0 0 0.2rem #f1f1532f!important;
+}
+.green-shadow
+{
+  box-shadow: 0 0 0 0.2rem #06884344!important;
+}
+/*Multiple iteration of form*/
+.page
+{
+  display:none;
+
+}
+.markers
+{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.markers.active {
+  opacity: 1;
+}
+
+/* Mark the markers that are finished and valid: */
+.markers.finish {
+  background-color: #4CAF50;
+}
+input.invalid {
+  background-color: #ffdddd;
+}
+
+#success_message
+{
+width:100%;
+height:100%;
+position:absolute;
+opacity:0.8;
+background-color:#000;
+z-index:2000;
+top:0px;
+/* display:none; */
+}
+#cross
+{
+  content:'❌';
+  position: absolute;
+right:20px;
+}
+/*Styles for the validator icon*/
+#info-icon0 , #info-icon1 , #info-icon2 , #info-icon3
+{
+  display:none;
+
+}
+#cross-icon0,#cross-icon1,#cross-icon2,#cross-icon3
+{
+  display:none;
+}
+#info-label0,#info-label1,#info-label2,#info-label3
+{
+  display:none;
+  font-style: normal;
+  /* background:#fff; */
+  /* color:rgb(13, 29, 29); */
+  color:#fff;
+  font-size: 14px;
+  border-radius: 2px;
+  padding:3px;
+  border:2px solid #000;
+  
+  
+}
