@@ -1,0 +1,729 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "open sans", helvetica, arial, sans;
+  background-image:url(bg.jpg) ;
+  background-repeat: no-repeat ;
+ background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+
+background:rgba(0,0,0,0.2);
+  width: 100%;
+  height: 88%;
+  min-width: 320px;
+  max-width: 450px;
+border-radius:15px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  padding: 10px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-family:monospace;
+  color: white;
+   margin-top: -22px;
+   font-size: 22px;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+p{
+  position: absolute;
+  top:69%;
+margin-top: 48px;
+color: white;
+margin-left: 11px;
+}
+label{
+position: absolute;
+top: 78%;
+padding: 20px;
+  color: white;
+  margin-left: 5px;
+  
+}
+#message{
+  margin-top: 30px;
+  margin-right: 3px;
+border: none;
+  outline: none;
+}
+input{
+color: rgb(247, 241, 241);
+  margin: 8px;
+  margin-bottom: 16px;
+  margin-top: 25px;
+  padding: 6px;
+  border:none;
+  border-bottom:2px solid black;
+  background: transparent;
+  outline:none;
+
+}
+
+.btn{
+cursor: pointer;
+  padding:11px;
+  width: 260px;
+  margin-top: 80px;
+  border-radius: 11px;
+  border: none;
+  font-size: 15px;
+  background-color:#66c4db ;
+  margin-left: -286px;
+position: absolute;
+top:76%;
+}
+.btn:hover{
+    background-color: thistle;
+      transition: .6s;
+
+}
+
+#phone{
+
+  margin-left:-182px;
+  position: absolute;
+  top: 48.9%;
+ 
+}
+.log-form input[type="text"]{
+
+  margin-left:140px;
+ 
+}
+
+.log-form input[type="email"]{
+
+  margin-left:140px;
+}
+.log-form input[type="password"]{
+
+  margin-left:140px;
+}
+
+#label{
+margin-left: -288px;
+position: absolute;
+top: 73.5%;
+
+}
+#above{
+  position: absolute;
+  top: 74%;
+  margin-left: -284px;
+
+}
+
+#label1{
+  margin-left: -174px;
+  position: absolute;
+  top: 73.5%;
+
+}
+
+#below{
+
+  margin-left: -170px;
+  position: absolute;
+  top: 74%;
+
+
+}
+
+
+p11{
+ position: absolute;
+ top: 19%;
+ left: 37%;
+ color: white;
+}
+p12{
+  position: absolute;
+  top: 28%;
+  left: 37%;
+  color: white;
+}
+p13{
+  position: absolute;
+  top: 37%;
+  left: 37%;
+  color: white;
+
+}
+p14{
+  color: white;
+  position: absolute;
+  top: 46%;
+  left: 37%;
+
+}
+p15{
+
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 37%;
+
+}
+textarea{
+
+  background:rgb(65, 69, 71);
+  resize: none;
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: -99px;
+  overflow: hidden;
+  
+}
+
+::-webkit-input-placeholder { 
+  color:rgb(223, 162, 109);
+}
+
+textarea::placeholder{
+ text-align: center;
+  padding: 23px;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) and (min-width:780px){
+  .log-form {
+    
+  background:rgba(0,0,0,0.2);
+    width: 100%;
+    height: 70%;
+    min-width: 120px;
+    max-width: 440px;
+  border-radius:15px;
+    position: absolute;
+    top: 55%;
+    left: 51%;
+    padding: 10px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+  }
+  
+p11{
+  position: absolute;
+  top: 22%;
+  left: 20%;
+  color: white;
+  font-size: 16px;
+ }
+ p12{
+   position: absolute;
+   top: 31%;
+   left: 20%;
+   color: white;
+   font-size: 16px;
+ }
+ p13{
+  font-size: 16px;
+   position: absolute;
+   top: 41%;
+   left: 20%;
+   color: white;
+ 
+ }
+ p14{
+  font-size: 16px;
+   color: white;
+   position: absolute;
+   top: 51%;
+   left: 19%;
+ 
+ }
+ p15{
+  font-size: 16px;
+ 
+   color: white;
+   position: absolute;
+   top: 60%;
+   left: 20%;
+ 
+ }
+ input{
+  color: rgb(247, 241, 241);
+    margin: 8px;
+    margin-bottom: 6px;
+    margin-top: 32px;
+    padding: 6px;
+    border:none;
+    border-bottom:2px solid black;
+    background: transparent;
+    outline:none;
+   width: 116px;
+  }
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    font-family:monospace;
+    color: rgb(239, 243, 245);
+     margin-top: -68px;
+     font-size: 22px;
+     margin-left: -13px;
+  }
+  
+.log-form input[type="text"]{
+
+  margin-left:140px;
+
+ 
+}
+
+.log-form input[type="email"]{
+
+  margin-left:140px;
+}
+.log-form input[type="password"]{
+
+  margin-left:140px;
+}
+#phone{
+
+  margin-left:10px;
+  position: absolute;
+  top: 48.9%;
+ 
+}
+#message{
+  margin-top: 30px;
+  margin-right: 18px;
+border: none;
+  outline: none;
+}
+
+textarea{
+
+  background:rgb(65, 69, 71);
+  resize: none;
+  margin-left: 4px;
+  color: white;
+  text-align: center;
+  margin-bottom: -102px;
+  overflow: hidden;
+  
+}
+.btn{
+  cursor: pointer;
+    padding:7px;
+    width: 210px;
+    margin-top: 80px;
+    border-radius: 11px;
+    border: none;
+    font-size: 12px;
+    background-color:#66c4db ;
+    margin-left: -106px;
+  position: absolute;
+  top:75%;
+  }
+  .btn:hover{
+      background-color: thistle;
+        transition: .6s;
+  
+  }
+  p{
+    position: absolute;
+    top:69%;
+  margin-top: 48px;
+  color: white;
+  margin-left: 15px;
+  }
+
+  
+#label{
+  margin-left: -48px;
+  position: absolute;
+  top: 75.8%;
+  font-size: 14px;
+  
+  }
+  #above{
+    position: absolute;
+    top: 74%;
+    margin-left: -94px;
+  
+  }
+  
+  #label1{
+    margin-left: 18px;
+    position: absolute;
+    top: 75.9%;
+    font-size: 14px;
+  
+  }
+  
+  #below{
+  
+    margin-left: 55px;
+    position: absolute;
+    top: 74%;
+  
+  
+  }
+  
+}
+@media only screen and (min-width: 600px)  {
+  p{
+    position: absolute;
+    top:69%;
+  margin-top: 48px;
+  color: white;
+  margin-left: 55px;
+  }
+
+  p11{
+    position: absolute;
+    top: 14.3%;
+    left: 34%;
+    color: white;
+    font-size: 16px;
+   }
+   p12{
+     position: absolute;
+     top: 25%;
+     left: 34%;
+     color: white;
+     font-size: 16px;
+   }
+   p13{
+    font-size: 16px;
+     position: absolute;
+     top: 34.4%;
+     left: 34%;
+     color: white;
+   
+   }
+   p14{
+    font-size: 16px;
+     color: white;
+     position: absolute;
+     top: 44%;
+     left: 34%;
+   
+   }
+   p15{
+    font-size: 16px;
+   
+     color: white;
+     position: absolute;
+     top: 52.9%;
+     left: 34%;
+   
+   }
+
+   input{
+    color: rgb(247, 241, 241);
+      margin: 8px;
+      margin-bottom: 6px;
+      margin-top: 34px;
+      padding: 6px;
+      border:none;
+      border-bottom:2px solid black;
+      background: transparent;
+      outline:none;
+     width: 146px;
+    }
+    h2 {
+      text-align: center;
+      font-weight: bold;
+      font-family:monospace;
+      color: rgb(239, 243, 245);
+       margin-top: -68px;
+       font-size: 22px;
+       margin-left: -13px;
+    }
+    
+  .log-form input[type="text"]{
+  
+    margin-left:170px;
+  
+   
+  }
+  
+  .log-form input[type="email"]{
+  
+    margin-left:170px;
+  }
+  .log-form input[type="password"]{
+  
+    margin-left:170px;
+  }
+  #phone{
+  
+    margin-left:-150px;
+    position: absolute;
+    top: 44%;
+   
+  }
+  #message{
+    margin-top: 35px;
+    margin-right: 18px;
+  border: none;
+    outline: none;
+  }
+  
+  textarea{
+  
+    background:rgb(65, 69, 71);
+    resize: none;
+    margin-left: 4px;
+    color: white;
+    text-align: center;
+    margin-bottom: -128px;
+    overflow: hidden;
+    
+  }
+  
+#label{
+  margin-left: -238px;
+  position: absolute;
+  top: 74%;
+  font-size: 15px;
+  
+  }
+  #above{
+    position: absolute;
+    top: 72%;
+    margin-left: -300px;
+  
+  }
+  
+  #label1{
+    margin-left: -150px;
+    position: absolute;
+    top: 74%;
+    font-size: 14px;
+  
+  }
+  
+  #below{
+  
+    margin-left: -132px;
+    position: absolute;
+    top: 72%;
+  
+  
+  }
+  .btn{
+    cursor: pointer;
+      padding:9px;
+      width: 240px;
+      margin-top: 80px;
+      border-radius: 11px;
+      border: none;
+      font-size: 14px;
+      background-color:#66c4db ;
+      margin-left: -276px;
+    position: absolute;
+    top:75%;
+    }
+    .btn:hover{
+        background-color: thistle;
+          transition: .6s;
+    
+    }
+  .log-form{
+
+    max-width: 540px;
+  }
+}
+@media only screen and (max-width:800px) 
+{
+p11{
+  position: absolute;
+  top: 14.3%;
+  left: 20%;
+  color: white;
+  font-size: 16px;
+ }
+ p12{
+   position: absolute;
+   top: 25%;
+   left: 20%;
+   color: white;
+   font-size: 16px;
+ }
+ p13{
+  font-size: 16px;
+   position: absolute;
+   top: 34.4%;
+   left: 20%;
+   color: white;
+ 
+ }
+ p14{
+  font-size: 16px;
+   color: white;
+   position: absolute;
+   top: 44%;
+   left: 20%;
+ 
+ }
+ p15{
+  font-size: 16px;
+ 
+   color: white;
+   position: absolute;
+   top: 52.9%;
+   left: 20%;
+ 
+ }
+
+ input{
+  color: rgb(247, 241, 241);
+    margin: 8px;
+    margin-bottom: 6px;
+    margin-top: 34px;
+    padding: 6px;
+    border:none;
+    border-bottom:2px solid black;
+    background: transparent;
+    outline:none;
+   width: 146px;
+  }
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    font-family:monospace;
+    color: rgb(239, 243, 245);
+     margin-top: -68px;
+     font-size: 22px;
+     margin-left: -13px;
+  }
+  
+.log-form input[type="text"]{
+
+  margin-left:140px;
+
+ 
+}
+
+.log-form input[type="email"]{
+
+  margin-left:140px;
+}
+.log-form input[type="password"]{
+
+  margin-left:140px;
+}
+#phone{
+
+  margin-left:-161px;
+  position: absolute;
+  top: 44%;
+ 
+}
+#message{
+  margin-top: 35px;
+  margin-right: 18px;
+border: none;
+  outline: none;
+}
+
+textarea{
+
+  background:rgb(65, 69, 71);
+  resize: none;
+  margin-left: 4px;
+  color: white;
+  text-align: center;
+  margin-bottom: -128px;
+  overflow: hidden;
+  
+}
+
+#label{
+margin-left: -238px;
+position: absolute;
+top: 74%;
+font-size: 15px;
+
+}
+#above{
+  position: absolute;
+  top: 72%;
+  margin-left: -300px;
+
+}
+
+#label1{
+  margin-left: -150px;
+  position: absolute;
+  top: 74%;
+  font-size: 14px;
+
+}
+
+#below{
+
+  margin-left: -132px;
+  position: absolute;
+  top: 72%;
+
+
+}
+.btn{
+  cursor: pointer;
+    padding:7px;
+    width: 180px;
+    margin-top: 80px;
+    border-radius: 11px;
+    border: none;
+    font-size: 12px;
+    background-color:#66c4db ;
+    margin-left: -226px;
+  position: absolute;
+  top:75%;
+  }
+  .btn:hover{
+      background-color: thistle;
+        transition: .6s;
+  
+  }
+.log-form{
+
+  max-width: 470px;
+}
+}
+
+
+}

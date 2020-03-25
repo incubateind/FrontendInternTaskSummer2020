@@ -1,0 +1,62 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+<!--<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">-->
+  <!-- Beautify This -->
+  <p11>Username</p11>
+  <p12>Email</p12>
+  <p13>Password</p13>
+  <p14>Confirm password</p14>
+  <p15>Phone no.</p15>
+  <div class="log-form">
+   
+    <h2>Enter Your Details</h2>
+    <form onsubmit="return validate()">
+
+      <input type="text" id="uname" title="username" placeholder="username" />
+      <input type="email" id="email" title="email" id="email" placeholder="email">
+
+      <input type="password" id="pswd" title="password" placeholder="password" />
+
+      <label id="label-1" style="color: red; font-family:arial;font-size: 11.5px; 
+      position:absolute; left:42%; top:35.1%; 
+      float:right;visibility:hidden;">PASSWORD TOO SHORT</label>
+
+      <input type="password" id="pswd1" title="cnfpassword" placeholder="confirm password" />
+      <label id="label-2" style="color:red;font-size:11.5px;position:absolute; 
+      top:41.7%; left:72%; visibility:hidden;">NOT MATCH</label>
+
+
+
+      <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message"></textarea>
+  
+      <p>Age:</p>
+    
+      <input type="radio" id="above" name="age" value="above">
+      <label for="above" id="label">Above 18</label>
+
+      <input type="radio" id="below" name="age" value="below">
+      <label for="below" id="label1">Below 18</label>
+
+      <button type="submit" class="btn">Submit</button>
+
+      <input type="text" id="phone" name="phone" placeholder="number">
+      <label id="label-3" style="color:red;font-size:11.5px;position:absolute; 
+      top:51.4%; left:62%; visibility:hidden;">TOO SHORT</label>
+    </form>
+  </div>
+  
+  <!-- Beautify Ends -->
+</body>
+</html>
