@@ -1,0 +1,79 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h2>Enter Your Details</h2>
+    <form id="formSignUp" class="form-container" autocomplete="off">
+      <div class="form-item">
+        <label>Username</label>
+        <input id="username" class="regex-input" type="text" name="username" placeholder="Username">
+        <div class="tooltip tooltip-username">
+          <div>3 to 15 characters and _ (underscore) character allowed.</div>
+        </div>
+      </div>
+      <div class="form-item">
+        <label>Email</label>
+        <input id="email" class="regex-input" type="email" name="email" placeholder="Email">
+      </div>
+      <div class="form-item">
+        <label>Phone</label>
+        <input id="phone" class="regex-input" type="tel" name="phone" placeholder="Phone number">
+        <div class="tooltip tooltip-phone">
+          <div>Enter 10 digit phone number.</div>
+        </div>
+      </div>
+      <div class="form-item">
+        <label>Password</label>
+        <input id="password" class="regex-input" type="password" name="password" placeholder="Password" />
+        <div class="tooltip tooltip-password">
+          <div class="tooltip-password-item tooltip-password-letter password-invalid">A letter</div>
+          <div class="tooltip-password-item tooltip-password-number password-invalid">A number</div>
+          <div class="tooltip-password-item tooltip-password-symbol password-invalid">A special character</div>
+          <div class="tooltip-password-item tooltip-password-length password-invalid">Minimum 8 characters</div>
+        </div>
+      </div>
+      <div class="form-item">
+        <label>Confirm Password</label>
+        <input id="passwordConfirm" class="regex-input" type="password" name="passwordcnf" placeholder="Confirm password" />
+      </div>
+      <div class="form-item">
+        <label>Your Message</label>
+        <textarea id="message" class="regex-input" name="message" cols="35" rows="4" placeholder="Enter message"></textarea>
+      </div>
+      <div class="form-item">
+        <label>Age</label>
+        <div class="form-radio-container">
+          <label class="form-radio">Below 18
+            <input id="ageBelow" type="radio" name="age" value="below">
+            <span class="radio-btn"></span>
+          </label>
+          <label class="form-radio">18 and Above
+            <input id="ageAbove" type="radio" name="age" value="above">
+            <span class="radio-btn"></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-error-text"></div>
+      <button id="formSubmitBtn" class="form-button" type="submit" class="btn">Submit</button>
+    </form>
+    <div id="object1" class="square-object"></div>
+    <div id="object2" class="square-object"></div>
+    <div id="object3" class="square-object"></div>
+    <div id="object4" class="square-object"></div>
+  </div>
+  <!-- Beautify Ends -->
+</body>
+</html>

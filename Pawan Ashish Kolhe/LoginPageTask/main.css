@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+*::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+input,
+label,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Add space above and below form */
+.log-form {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  position: relative;
+  top: unset;
+  left: unset;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: unset;
+  border-top: 5px solid #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 15px;
+  }
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+  .log-form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .log-form {
+    padding: 1em;
+  }
+}
+
+.form-container input, .form-container textarea {
+  width: 100%;
+  outline: none;
+  display: block;
+  background: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.07);
+  padding: 12px 12px;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.form-container input:focus, .form-container textarea:focus {
+  border: 2px solid rgba(0, 0, 0, 0.6);
+}
+.form-container input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.form-container textarea {
+  resize: none;
+}
+.form-container textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.green-border {
+  border: 2px solid rgba(156, 204, 101, 1) !important;
+}
+
+.red-border {
+  border: 2px solid rgba(229, 115, 115, 1) !important;
+}
+
+.form-container {
+  display: grid;
+  gap: 20px;
+}
+
+.form-container .form-item {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-container .form-item label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+/*** Radio button styling ***/
+.form-radio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form-radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding-left: 28px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 18px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 20px;
+}
+
+/* Hide default radio button circle */
+.form-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom radio button styling */
+.radio-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ededed;
+}
+
+/* On mouse-over, add a grey background color */
+.form-radio:hover input ~ .radio-btn {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a black background */
+.form-radio input:checked ~ .radio-btn {
+  background-color: #000000;
+}
+
+/* Create square indicator inside radio button (hidden when not selected) */
+.radio-btn:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 7px;
+  left: 7px;
+  width: 6px;
+  height: 6px;
+  background: white;
+}
+
+/* Show square indicator inside radio button when selected */
+.form-radio input:checked ~ .radio-btn:after {
+  display: block;
+}
+
+@media only screen and (max-width: 320px) {
+  .form-radio-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/*** Button styling ***/
+.form-button {
+  width: auto;
+  outline: none;
+  background: rgba(0, 0, 0, 1);
+  border: 0;
+  padding: 10px 10px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.form-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);;
+}
+.form-button:active {
+  transform: translateY(2px);
+}
+
+.form-error-text {
+  display: none;
+  color: red;
+  font-family: monospace, sans-serif;
+  text-align: left;
+}
+
+/*** Tooltips ***/
+.tooltip {
+  padding: 15px;
+  position: absolute;
+  bottom: 78px;
+  left: 0px;
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-bottom-right-radius: 0px;
+  color: #ffffff;
+  z-index: 100;
+}
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -28px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  border-top: 28px solid rgba(0, 0, 0, 0.75);
+  border-left: 20px solid transparent;
+  z-index: 100;
+}
+
+.tooltip-password .tooltip-password-item {
+  color: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  font-size: 0.9rem;
+}
+.tooltip-username div {
+  color: #ffffff;
+  margin-left: 0px;
+  font-size: 0.9rem;
+}
+
+.tooltip-password .tooltip-password-item:first-child {
+  margin-top: 0px;
+}
+.tooltip-password .tooltip-password-item:last-child {
+  margin-bottom: 0px;
+}
+.tooltip-password .tooltip-password-item::before {
+  margin-right: 10px;
+}
+.tooltip-password .password-valid {
+  color: #afdb7d !important;
+}
+.tooltip-password .password-valid::before {
+  content: '✔';
+}
+.tooltip-password .password-invalid {
+  color: #ffffff;
+}
+.tooltip-password .password-invalid::before {
+  content: '✖';
+}
+
+#password:focus ~ .tooltip {
+  display: block;
+}
+#username:focus ~ .tooltip {
+  display: block;
+}
+#phone:focus ~ .tooltip {
+  display: block;
+}
+
+/*** Checkmark ***/
+.checkmark_circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 3.5;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark_check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
+
+.square-object {
+  background-color: #000000;
+  position: absolute;
+  z-index: 10;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  transition: 0.3s ease;
+}
+
+#object1 {
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: -180px;
+  opacity: 0.05;
+}
+
+#object2 {
+  width: 90px;
+  height: 90px;
+  top: 120px;
+  right: -180px;
+  opacity: 0.05;
+}
+
+#object3 {
+  width: 100px;
+  height: 100px;
+  top: 320px;
+  left: -280px;
+  opacity: 0.05;
+}
+
+#object4 {
+  width: 110px;
+  height: 100px;
+  top: 520px;
+  right: -280px;
+  opacity: 0.05;
+}
+
+.square-object:hover {
+  opacity: 0.1 !important;
+  transform: translateY(-5px);
+}
+@media only screen and (max-width: 1050px) {
+  .square-object {
+    display: none;
+  }
+}
