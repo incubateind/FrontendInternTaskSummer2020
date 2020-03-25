@@ -1,0 +1,85 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+ 
+</head>
+<body>
+
+<!--<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">-->
+
+  <!-- Beautify This -->
+
+  <div class="log-form">
+    <h2 class="text-success">Enter your details</h2>
+    <form  action = "success.html" onsubmit = "return validateForm()" class ="bg-light"> 
+     
+    <div class="form-group">
+      <input type="text" title="username" class="form-control" name="Username" id="username" placeholder="username" autocomplete="off" />
+      <span id ="user" class = "text-danger"></span>
+    </div>
+     
+    <div class="form-group">
+      <input type="text" title="email" class="form-control" name="Email" id="email" placeholder="email"  autocomplete="off"/>
+      <span id = "checkEmail" class = "text-danger""></span>
+    </div>
+
+    <div class="form-group"> 
+      <input type="password" title="password" class="form-control" name="Password" id="password" placeholder="password" autocomplete="off" />
+      <span id = "pass" class = "text-danger"></span>
+    </div>
+
+    <div class="form-group"> 
+      <input type="password" title="cnfpassword" class="form-control" name="ConfirmPassword" id="cnfpassword" placeholder="confirm password" autocomplete="off"/>
+      <span id = "matchPass" class = "text-danger"></span>
+    </div>
+
+    <div class="form-group">
+      <input type="phone" title="phone" class="form-control" name="PhoneNum" id="phone" placeholder="phone" autocomplete="off"/>
+      <span id = "number" class = "text-danger"></span>
+    </div>
+
+    <div class="form-group"> 
+      <textarea id="msz" cols="35" rows="4" class="form-control" name="Message"  placeholder="enter message"></textarea>
+      <span id = "message" class = "text-danger"></span>
+    </div>
+
+    <div class="form-group"> 
+      <lable for="age">Age:</label>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <input type="radio" class="custom-radio" id="above" name="age" value="above">
+      <label for="above">Above 18</label>
+      <input type="radio" id="below" name="age" value="below">
+      <label for="below">Below 18</label>
+      <span id = "radio" class = "text-danger"></span>
+    </div>
+
+     <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+</body>
+</html>
