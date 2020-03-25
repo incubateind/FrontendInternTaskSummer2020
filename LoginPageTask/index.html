@@ -1,6 +1,3 @@
-<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
-<!-- Proper naming convention should be used while naming id attributes. -->
-<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,86 +6,27 @@
   <title>Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="main.js"></script>
 </head>
 <body>
-    
-    <!-- Adding a jumbotron for image-->
-
-    <div class="jumbotron">
-    <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
-    </div>
-
-    <!-- Beautify This -->
-    <div class="card-body log-form">
-    <h2>Login</h2>
-
-    <!-- Adding a form using bootstrap -->
-
-    <form action="success.html" method="GET">
-        <div class="form-group row">
-            <label for="inputuser" class="col-sm-2 col-form-label">Username</label>
-            <div class="col-sm-10">
-                <input type="text" id="inputuser" class="form-control form-control-sm input" placeholder="gamechanger@007" required>
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputemail" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-                <input type="email" id="inputemail" class="form-control form-control-sm input" placeholder="John@dreamer.com" required>
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputphone" class="col-sm-2 col-form-label">Phone No</label>
-            <div class="col-sm-10">
-                <input type="text" id="inputphone" class="form-control form-control-sm input" required>
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputpass" class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-10">
-                <input type="password" id="inputpass" class="form-control form-control-sm input" placeholder="*********" required>
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="inputconfirmpass" class="col-sm-2 col-form-label">Confirm Password</label>
-            <div class="col-sm-10">
-                <input type="password" id="inputconfirmpass" class="form-control form-control-sm input" placeholder="*********" required>
-            </div>
-        </div>
-        <div class="form-group row">
-            <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message" class="form-control"></textarea>
-        </div>
-        <fieldset class="form-group">
-            <div class="row">
-                <legend class="col-form-label col-sm-2 pt-0">Age</legend>
-                <div class="col-sm-10">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                        <label class="form-check-label" for="gridRadios1">
-                            Above 18
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                            Below 18
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-        <div class="form-group row">
-            <div class="col-sm-10">
-                <a href="success.html">
-              <button type="submit" class="btn btn-primary">Submit</button>
-              </a>
-            </div>
-          </div>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h2>Enter your details</h2>
+    <form>
+      <input type="text" title="username" placeholder="username" />
+      <input type="email" title="email" placeholder="email">
+      <input type="password" title="password" placeholder="password" />
+      <input type="password" title="cnfpassword" placeholder="confirm password" />
+      <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message"></textarea>
+      <p>Age</p>
+      <input type="radio" id="above" name="age" value="above">
+      <label for="above">Above 18</label>
+      <input type="radio" id="below" name="age" value="below">
+      <label for="below">Below 18</label>
+      <button type="submit" class="btn">Submit</button>
     </form>
-  </div> 
+  </div>
   <!-- Beautify Ends -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 </body>
-</html>
+</html> 
