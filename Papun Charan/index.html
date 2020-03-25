@@ -57,8 +57,8 @@
       <!--      password    -->
       <div class=" text-center mb-0">
         <div class="form-group mx-auto">
-          <input id="password" class="form-control inpSp" type="password" name="password" title="password"
-            placeholder="password" required>
+          <input id="password" class="form-control inpSp" type="password" title="password" placeholder="password"
+            onkeyup="validatePassword()" required>
           <span>
             <i id="eye" class="fa fa-fw fa-eye field-icon"></i>
           </span>
@@ -68,7 +68,8 @@
       <!-- confirm password -->
       <div class=" text-center mb-0">
         <div class="form-group mx-auto">
-          <input class="form-control inpSp" type="password" title="cnfpassword" placeholder="confirm password">
+          <input id="confirm_password" class="form-control inpSp" type="password" title="cnfpassword"
+            placeholder="confirm password" onkeyup="validatePassword()" required>
         </div>
       </div>
 
@@ -101,7 +102,7 @@
       <!--     button     -->
       <div class=" text-center mb-3">
         <div class="form-group mx-auto">
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <button id="submit" class="btn btn-primary" type="submit">Submit</button>
         </div>
       </div>
 

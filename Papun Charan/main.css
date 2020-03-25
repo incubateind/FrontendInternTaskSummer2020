@@ -46,24 +46,12 @@ body{
 .log-form {
   padding: 1em;
 }
-/* @media screen and (max-width: 700px) {
+
+@media screen and (max-width: 700px) {
   .log-form{
-    max-height: 100%;
+    padding-top: 10em;
   }
-} */
-
-/* @media all and (max-width: 700px) {
-  .log-form {
-    margin-top: 58px;
-    width: 100%;
-  }
-
-} */
-
-
-
-
-
+}
 
 .logo {
   padding-bottom: 12px;
