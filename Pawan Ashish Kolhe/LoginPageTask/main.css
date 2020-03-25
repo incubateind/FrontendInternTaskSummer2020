@@ -44,6 +44,14 @@ form {
   color: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
 input,
 label,
 textarea,
@@ -409,12 +417,37 @@ a {
   opacity: 0.05;
 }
 
+#objectCat {
+  width: 110px;
+  height: 110px;
+  bottom: -88px;
+  right: 10px;
+  position: absolute;
+  opacity: 0.15;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+
 .square-object:hover {
   opacity: 0.1 !important;
   transform: translateY(-5px);
 }
+.square-object:active {
+  transform: scale(0.9);
+}
+
 @media only screen and (max-width: 1050px) {
+  .log-form {
+    margin-bottom: 130px;
+  }
   .square-object {
     display: none;
+  }
+  #objectCat {
+    bottom: -138px;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    opacity: 0.2;
   }
 }

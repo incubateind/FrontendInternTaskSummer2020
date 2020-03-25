@@ -173,24 +173,23 @@ window.addEventListener('load', () => {
     error_text.classList.add('wobble-hor-bottom');
 
     let all_valid = true;
-    let regex_objects = Object.values(regex);
 
     // check if atleast one age option selected
     if(ageBelow.checked === false && ageAbove.checked === false) {
       all_valid = false;
       error_text.style.display = "block";
       error_text.innerText = "Select age category.";
-      ageBelow.focus();
+      ageBelow.focus({preventScroll:false});
     }
 
     // check if all fields are valid
-    for (let [key, value] of Object.entries(regex_objects)) {
+    for (let [key, value] of Object.entries(regex)) {
       if(value.valid === false) {
         all_valid = false;
         error_text.style.display = "block";
         error_text.innerText = value.error;
-        console.log(document.querySelector(`input[name="${key}"]`));
-        document.querySelector(`input[name="${key}"]`).focus();
+        document.querySelector(`input[name="${key}"]`).focus({preventScroll:false});
+        return;
       }
     }
     
