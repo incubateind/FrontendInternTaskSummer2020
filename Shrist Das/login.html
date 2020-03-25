@@ -1,0 +1,160 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+<!-- Beautify This -->
+<!-- <div class="log-form"> --> 								<!-- Not using log form division as I have made a pop up modal for the login Page -->
+	<!-- modal start -->
+	<div id="myModal" class="modal fade login-register-form" role="dialog">
+	 	<div class="modal-dialog cascading-modal modal-sm">
+	        <div class="modal-content">
+		            <div class="modal-c-tabs">					<!-- 2 tabs : one for Login and one for Register -->
+		            <ul class="nav nav-tabs navbar-inverse">
+		                <li class="nav-item active">
+		                  <a class="nav-link" data-toggle="tab" role="tabs" href="#Login"><i class="fas fa-user mr-auto"></i> Login</li></a>
+		                </li>
+		                <li class="nav-item" >
+		                   <a class="nav-link" data-toggle="tab" role="tabs" href="#Register"><i class="fas fa-user-plus"></i> Register</a></li>
+		                </li>
+		            </ul>
+		           	</div>
+	         <!--Panel Login-->
+		        <div class="modal-body">
+		          <!--Login Body-->
+			          	<div class="col-md-auto">
+			    		<h4>Enter your details</h4>
+			    		</div>
+			    		<!-- Form Starts -->
+		    		<form id="login_form" class="was-validated" action="login.html" method="post" onsubmit=" return validation()">
+			         	<div class="tab-content">
+				          	<div class="tab-pane fade in active" id="Login">
+				              	<div class="form-group">
+				                	<input type="text" id="username" class="form-control form-control-sm validate" placeholder="Enter Username" required>
+				               	</div>	
+				              	<div class="form-group">
+				                	<input type="email" id="mail" class="form-control form-control-sm validate" placeholder="E-mail" required>
+				              	</div>
+				              	<div class="form-group">
+				              		<div class="row form-group">
+					                	<div class="col-lg-10">
+				              				<input type="Password" id="password" class="form-control form-control-sm validate" placeholder="Password" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$" title="7 to 15 characters which contain at least one numeric digit and a special character" required >	<!-- Regular expression to set parameter for password -->
+				              			</div>
+					              		<div class="col-md-1">	
+					              			<i class="fa fa-eye form-control-sm" onclick="showpwsd()"></i>	<!-- show/unshow password -->
+					              		</div>
+					              	</div>
+				            	</div>
+				                <div class="form-group">
+				                	<div class="row">
+					                	<div class="col-lg-10">
+					                	<input type="Password" id="cnfpassword" class="form-control form-control-sm validate" placeholder="Confirm Password" required>
+					                	</div>
+					                	<div class="col-md-1">
+					                	<a><i class="fa fa-eye form-control-sm" onclick="showcnfpw()" ></i></a>		<!-- show/unshow confirm password -->
+					            		</div>
+				            		</div>
+				            	</div>
+				            	<div class="form-group">
+				                	<input type="text" id="phone" class="form-control validate" placeholder="Enter your Phone Number" title="Enter valid 10 digit phone number"  pattern="[1-9]{1}[0-9]{9}" required>	<!-- Regular expression to set parameters for phone number -->
+				            	</div>
+					            <div class="form-group">
+					       		<textarea name="message" id="message" class="form-control" placeholder="Enter Message"></textarea>	
+					       		<!-- Text area using bootstrap -->
+					       		</div>
+					      		<div class="form-group form-check">
+					            <label>Enter Age</label>	
+					            <input type="radio" name="category" checked>Above 18	<!-- Radio Buttons -->
+					            <input type="radio" name="category">Below 18
+					       		</div>
+					            <div class="text-center">
+					                <label><button class="btn btn-info" id="login"type="Submit" onclick="check()">Submit </button></label>
+					                <!-- Check the database for successful login and redirect to main website, if successful -->
+					            </div>
+					            <div class="text-center">		<!-- General Login page items -->
+					                <p>Not a member? <a href="#Register" class="blue-text">Sign Up</a></p>	
+					                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+					            </div>
+		          		</div>
+		        	</form> 
+		    	<!--Register panel-->
+            		<div class="tab-pane fade" id="Register">
+            <!--Register Body-->
+            			<form name="reg_form">
+              			<div class="form-group">
+                			<input type="name" id="fname" class="form-control form-control-sm validate" placeholder="Full Name" required pattern="[a-zA-Z]+$" title="Enter valid name">				<!-- Regular expression to have only letters and avoid all other characters -->
+              			</div>
+				        <div class="form-group">
+				            <input type="text" id="r_uname" class="form-control form-control-sm validate" placeholder="Enter Username" required>
+				        </div>
+              			<div class="form-group">
+               				 <input type="email" id="r_mail" class="form-control form-control-sm validate" placeholder="Your Email" required="">
+              			</div>
+              			<div class="form-group">
+			                <div class="row form-group">
+					                	<div class="col-lg-10">
+				              				<input type="Password" id="r_pswd" class="form-control form-control-sm validate" placeholder="Password" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$" title="7 to 15 characters which contain at least one numeric digit and a special character" required >	<!-- Regular expression to set parameter for password -->
+				              			</div>
+					              		<div class="col-md-1">	
+					              			<i class="fa fa-eye form-control-sm" onclick="show()"></i>	<!-- show/unshow password -->
+					              		</div>
+					             </div>
+				           </div>
+				                <div class="form-group">
+				                	<div class="row form-group">
+					                	<div class="col-lg-10">
+					                	<input type="password" id="r_cnfpw" class="form-control form-control-sm validate" placeholder="Confirm Password" required>
+					                	</div>
+					                	<div class="col-md-1">
+					                	<a><i class="fa fa-eye form-control-sm" onclick="view()" ></i></a>		<!-- show/unshow confirm password -->
+					            		</div>
+				            		</div>
+				            	</div>
+              			<div class="form-group">
+				           <input type="text" id="r_phone" class="form-control validate" placeholder="Enter your Phone Number" title="Enter valid 10 digit phone number"  pattern="[1-9]{1}[0-9]{9}" required>	<!-- Regular expression to set parameters for phone number -->
+				       	</div>
+		             		<div class="text-center">
+		                		<button class="btn btn-info"> Sign up </button>
+		              		</div>
+			              	<div class="options container-fluid">
+			                	<p>Already have an account? <a href="login.html" class="blue-text">Log In</a></p>
+			              	</div>
+			            </form>
+              		</div>
+            </div>   
+	    	<!--Footer-->		<!-- Close the login page if user wants to browse without logging in -->
+	            <div class="modal-footer" id="rf">
+	              <button type="button" class="btn btn-danger ml-auto" data-dismiss="modal">Close</button>
+	            </div>
+	          
+	     	</div>
+	    </div>
+	</div>  
+</div> 
+<!-- </div> -->
+<!-- Beautify Ends -->
+<!-- Start your main website here with basic animation using css -->
+<div class="heading">Welcome</div>
+<div class="heading">To The</div>
+<div class="heading">Main Website</div>
+</body>
+	<!-- Added some scripts -->
+  	<!-- Latest compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" media="screen" href="./main.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./main.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Include Font Awesome-->    
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</html>

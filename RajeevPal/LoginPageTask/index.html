@@ -1,0 +1,67 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  
+ <div class="logo-cont"> 
+  <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="image">
+</div> 
+<!-- Beautify This -->
+  <div class="log-form">
+    <h2>Enter your details</h2>
+    <form class="" action="success.html">
+      <div class="form-group">
+        <label for="username">user name</label>
+        <input class="form-control" type="text" title="username" placeholder="username" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input class="form-control" type="email" title="email" placeholder="Email Address">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone No.</label>
+        <input class="form-control" type="tel" title="phone no." placeholder="Phone no." pattern="^\d{10}$">
+        <small id="emailHelp" class="form-text text-muted">It should be of 10 digits (format: xxxxxxxxxx):.</small>
+      </div>
+      <div class="form-group">
+        <label for="password">password</label>
+        <input class="form-control" type="password" title="password" placeholder="password" />
+      </div>
+      <div class="form-group">
+        <label for="confirmpassword">confirm password</label>
+        <input class="form-control" type="password" title="cnfpassword" placeholder="confirm password" />
+      </div>
+      <div class="form-group">
+        <label for="entermessage">enter message</label>
+        <textarea class="form-control" name="message" id="message" cols="35" rows="4" placeholder="enter message"></textarea>
+      </div>
+      <p>Age</p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="above" name="age" value="above">
+        <label class="form-check-label" for="above">Above 18</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="below" name="age" value="below">
+        <label class="form-check-label" for="below">Below 18</label>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" onclick="myFunction()">Submit</button>
+      </div> 
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+</body>
+</html>

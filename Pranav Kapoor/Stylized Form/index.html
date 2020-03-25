@@ -1,0 +1,104 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <!-- Beautify This -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+            <h5 class="card-title text-center">Enter Your Details</h5>
+              <form action="SUCCESS.html" class="needs-validation" novalidate>
+                <div class="form-group">
+                  <input type="text" class="form-control" title="username" placeholder="username" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out a valid username.</div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" title="email" placeholder="email" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Your email-id must look like abx@xyz.com.</div>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" title="phone" placeholder="Phone number"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out your phone in the following format 123-456-7890.</div>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" title="password" placeholder="password" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out a password.</div>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" title="cnfpassword" placeholder="confirm password"
+                    required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill the same value as above here.</div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="message" id="message" cols="35" rows="4"
+                    placeholder="enter message"></textarea>
+                  <br>
+                  <br>
+                  <p style="font-size:30px">Age</p>
+                  <input type="radio" id="above" name="age" value="above">
+                  <label for="above">Above 18</label>
+                  <input type="radio" id="below" name="age" value="below">
+                  <label for="below">Below 18</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script >
+    // Disable form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
+  <!-- Beautify Ends -->
+</body>
+
+</html>

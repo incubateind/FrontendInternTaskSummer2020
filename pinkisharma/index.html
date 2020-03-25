@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="log.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384
+4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!---->
+    <div class="container">
+        <div class=" row justify-content cent">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 class=" text-center"> Login Form </h1>
+                <form>
+                    <!-- label for email start-->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="username" aria-describedby="emailHelp" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <!-- label end-->
+                    <!-- label for username strt-->
+                    <div class="form-group">
+                        <label for="uname">username</label>
+                        <input type="uname" class="form-control" id="uname" placeholder="  enter username" aria-describedby="emailHelp" required>
+
+
+                    </div>
+                    <!--- label end-->
+                    <!-- label for password strt-->
+                    <div class="form-group">
+                        <label for="Pwd">Password</label>
+                        <input type="password" class="form-control" id="pwd " placeholder="password" required>
+                    </div>
+                    <!-- label end-->
+
+                    <!-- label for cnfirm password-->
+                    <div class="form-group">
+                        <label for="exampleInputConfirmpswd">Confirmpswd</label>
+
+
+                        <input type="password" class="form-control" id="exampleInputConfirmpswd " min="6" max="10" placeholder="enter password for confirmation" required>
+                    </div>
+                    <!-- label for phone start-->
+                    <div class="form-group">
+                        <label for="exampleInputPhone">Phone No.</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter  Phone number" required>
+                    </div>
+                    <!-- label for phone end-->
+
+                    <!-- label for age start-->
+                    <div class="form-group">
+                        <label for="Age">Age</label>
+                        <input type="radio" id="above" name="age" value="above">
+                        <label for="above">Above 18</label>
+                        <input type="radio" id="below" name="age" value="below">
+                        <label for="below">Below 18</label>
+                    </div>
+                    <!-- label for age end-->
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary" onsubmit="myFuncion()">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>

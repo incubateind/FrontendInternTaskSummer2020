@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+
+
+/*overwriting log-form to add the scroll and handle content overflow*/
+.log-form{
+    min-height: 100%;
+    bottom: 0;
+    overflow: auto;
+}
+
+/*beautifying and spacing the heading*/
+.heading{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 700;
+    font-family:cursive;
+}
+
+/*beautifying and spacing the input fields*/
+.input-fields{
+    width: 80%;
+    margin: 1em 1em 0.5em 1em;
+    border-radius: 2em;
+    padding: 0.5em 0.5em;
+    background-color:whitesmoke;
+}
+
+/*beautifying and spacing the message box*/
+#message{
+    margin-top: 1em;
+    border-radius: 1em;
+    background-color:whitesmoke;
+}
+
+/*spacing the age box*/
+.age-box{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+/*spacing the elements in age box*/
+th{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/*beautifying the Above 18 checkbox*/
+#above{
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/*beautifying the Below 18 checkbox*/
+#below{
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/*beautifying the Submit button*/
+button.btn{
+    padding: 0.5em 6em 0.5em 6em;
+    display: block;
+    margin:auto;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    background-color: cornflowerblue;
+    border-radius: 2em;
+    color: aliceblue;
+    
+}
+
+/*making the Submit button responsive to curson hover*/
+button.btn:hover{
+    background-color:lawngreen;
+    color: aliceblue;
+}
+
+/*making the error messages red*/
+#messages{
+    color: red;
+}
+
+
+
+
+
+/*responsive behaviour under 800px width*/
+@media only screen and (max-width: 800px) {
+    
+/*    shifting company logo to top center for visibility*/
+    .logo-container{
+        text-align: center;
+        margin-top: 1em;
+    }
+    
+/*    shifting log form accordingly*/
+    .log-form{
+        margin-top: 80px;
+    }
+    
+/*    shifting heading accordingly*/
+    .heading{
+        margin-top: 0;
+    } 
+    
+/*    changing the webpage backgroud to violet for mobiles and tablets*/
+    html{
+        background-color: blueviolet;
+    }
+    .logo-container{
+        background-color: blueviolet;
+    }
+}
+
+
+/*responsive behaviour under 330px width*/
+@media only screen and (max-width: 330px) {
+    
+/*    compressing spacing of age box elements*/
+    th{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+/*    compressing size of heading*/
+    .heading{
+        font-size: 1.5em;
+    }
+    
+/*    compressing size of input fields */
+    .input-fields{
+        width: 80%;
+        margin: 1em 0.5em 0.5em 0.5em;
+        border-radius: 2em;
+        padding: 0.5em 0.5em;
+        background-color:whitesmoke;
+    }
+    
+/*    compressing size of message box*/
+    #message{
+        margin-top: 1em;
+        border-radius: 1em;
+        background-color:whitesmoke;
+        width: 80%;
+    }
+    
+/*    changing the webpage backgroud to violet for even smaller devices like IPhone C*/
+    html{
+        background-color: blueviolet;
+    }
+    .logo-container{
+        background-color: blueviolet;
+    }
+}
+
+
+
+
+

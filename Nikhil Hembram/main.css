@@ -1,0 +1,188 @@
+/* setting logo's width */
+.logo{
+  width: 100px;
+}
+/* setting web pages font-size and font-family */
+html{
+  font-size: 12px;
+  font-family: 'Roboto',sans-serif;
+}
+/* setting background image for page with various constraints*/
+body {
+  background-image:url('giphy.gif'); background-repeat:no-repeat;
+  background-size: 30% ;
+   background-position: left center;
+
+  }
+/* aliging division containg id=wrapper in the screen */
+#wrapper
+{
+  width:90%;
+  height: 100%;
+  margin : 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+/* styling the class type right */
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  bottom: 0px;
+  padding: 10px;
+}
+/* styling the class type form-container */
+.form-container{
+width: 100%;
+max-width: 40rem;
+background-color: white;
+position: relative;
+padding :10rem 0;
+box-shadow: 0 1px 1.5rem rgba(0,0,0,1);
+border-radius: 1rem;
+z-index: 1;
+}
+/* styling the contents before class-type form-container */
+.form-container::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 30rem;
+  background: linear-gradient(to left,#82CAFA,#893BFF);
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  z-index: -1;
+}
+/* styling the class-type form heading */
+.form-heading
+{
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 3.5rem;
+  left: 10rem;
+}
+/* styling the form  */
+form{
+  transform: translateX(10rem);
+  padding: 2rem 0;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 1.5rem rgba(0,0,0,.1);
+}
+/* styling all the divisions with class-type input-group */
+.input-group{
+  width:90%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}/* styling all the divisions with class-type input-group with  input tags*/
+.input-group input{
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: .5rem;
+  border:none;
+  outline:none;
+  font-size:1.8rem;
+  color:#893BFF;
+}/* styling all the divisions with class-type input-group except the button */
+.input-group > i{
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #893BFF;
+}
+
+.input-group .bar{
+  position: absolute;
+  left:0;
+  bottom: 0;
+  background-color:rgba(0,0,0,.1);
+  width: 100%;
+  height: 1px;
+}
+.input-group .bar::before{
+  content: '';
+  position: absolute;
+  background-color:#893BFF;
+  width:0;
+  height: 2px;
+  transition: width 650ms;
+}
+/* styling for all h2 tags */
+h2 {
+  margin: 5em 0 1em;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+#imgsize{
+  width:45%;
+  transform:translateX(50%);
+}
+.input-group input:focus + .bar::before{
+  width:100%;
+}
+
+/* styling of telefram button is done here */
+.input-group button{
+  /* providing margin and padding to the button */
+  margin: 3rem auto;
+  padding:1rem 5rem;
+  /* assigning background color to button */
+  background: linear-gradient(to left,#82CAFA,#893BFF);
+  /* removing borders */
+  border:none;
+  /* setting color of telegram symbol */
+  color: white;
+  /* providing font size of the telegram symbol */
+  font-size: 2.5rem;
+  /* transforming cursor to pointer when hovered over button */
+  cursor: pointer;
+  /* converting stiff border to have border radius of 3rem */
+  border-radius: 3rem;
+}
+/* when focused or hovered over button background color is changed here */
+.input-group button:focus,.input-group button:hover{
+  background: linear-gradient(to right,#82CAFA,#893BFF);
+}
+/* align messaging area to the center,increase it's font and it's width according to the division */
+.input-group textarea{
+  width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+/* for resizing of page max-width is set 700px */
+/* necessary changes are made for contracted screen size */
+@media screen and (max-width: 700px){
+  .form-container::before{
+    height:10rem;
+    /* height is reduced  to 10rems */
+  }
+  .form-heading{
+    left:50%;
+    transform:translateX(-50%);
+    /* form is shifted in reverse x-direction so that it can fit the screen */
+  }
+  form{
+    /* form is stylized for contracted screen */
+    border-radius: initial;
+    transform: initial;
+    box-shadow: none;
+  }
+  body{
+    /* body background image is changed so that it can fit the contracted screen */
+    background-image: url('null.png');
+  }
+
+
+}

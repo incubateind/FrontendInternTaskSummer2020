@@ -1,0 +1,41 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="img-fluid logo fadeIn ninth" alt="">
+  <!-- Beautify This -->
+<div class="container">	
+  <div class="log-form"> <!-- This is the login form -->
+  	<h2><b>ENTER YOUR DETAILS</b></h2>
+    <form action="secondPage.html" id="formm" method="post" oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+  		<input type="text" class="form-control mb-2 mr-sm-2 fadeIn first" placeholder="Enter Username" id="username" required>
+  		<input type="email" class="form-control mb-2 mr-sm-2 fadeIn second" placeholder="Enter email" id="email" required>
+  		<input type="password" class="form-control mb-2 mr-sm-2 fadeIn third" placeholder="Enter password" id="password1" name='up' required>
+  		<input type="password" class="form-control mb-2 mr-sm-2 fadeIn fourth" placeholder="Re-enter password" id="password2" name='up2' required>
+    	<input type="text" class="form-control mb-2 mr-sm-2 fadeIn fifth" type="tel" placeholder="Enter phone number" id="mobile" required>
+  		<textarea class="form-control mb-2 mr-sm-2 fadeIn sixth" name="message" id="message" cols="35" rows="4" placeholder="enter message" required></textarea>
+    	<label class="form-check-label fadeIn seventh" for="radio1">
+    		<input type="radio" class="form-check-input fadeIn seventh" id="radio1" name="optradio" value="option1" checked>Age above 18</label><br>
+    	<label class="form-check-label fadeIn eight" for="radio2">
+        	<input type="radio" class="form-check-input fadeIn eight" id="radio2" name="optradio" value="option2">Age below 18 </label><br><br>
+    <button type="submit" class="btn btn-dark fadeIn ninth">Submit</button>
+   </form>
+  </div>
+  <!-- Beautify Ends -->
+  </div>
+</body>
+</html>

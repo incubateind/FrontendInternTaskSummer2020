@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 340px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -2px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -2px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -2px 53px -7px rgba(138, 138, 138, 0.50);
+}
+
+form {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+body {
+  background: url(w21.jpg);
+  background-repeat: no-repeat;
+  background-size: 3000px 1200px;
+}
+
+.log-form {
+box-sizing: border-box;
+  padding: 70px 30px;
+  margin-bottom: 25px;
+  background-color: rgba(2, 0, 133, 0.5);
+}
+
+.avatar {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+position: absolute;
+top: -75px; 
+left: calc(50% - 75px);
+cursor: pointer;
+}
+
+form div .label {
+font-weight: bold;
+}
+
+p {
+font-weight: bold;
+}
+
+.log-form input[type="text"],
+.log-form input[type="password"],
+.log-form input[type="tel"],
+.log-form input[type="email"],
+.log-form textarea {
+border: none;
+border-bottom: 2px solid #000;
+background: transparent;
+outline: none;
+height: 40px;
+margin-bottom: 20px;
+}
+
+#dateinput {
+border: none;
+border-bottom: 2px solid #000;
+background: transparent;
+outline: none;
+height: 40px;
+margin-bottom: 20px;
+}
+
+.log-form input[type="submit"]:hover {
+cursor: pointer;
+  background:#ffc107;
+  color:#000;
+}
+
+
+#btn2 {
+visibility: hidden;
+}
+
+
+
+.header {
+position: fixed;
+top: 0;
+z-index: 1;
+width: 100%;
+}
+
+@media all and (max-width: 700px) {
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+
+.log-form {
+  margin-top: 350px;
+  width: 100%;
+}
+
+}
+
+@media all and (min-width: 702px) {
+.log-form {
+  margin-top: 270px;
+}
+}

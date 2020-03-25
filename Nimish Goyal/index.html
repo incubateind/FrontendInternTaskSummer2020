@@ -1,0 +1,80 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>copy</title>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	 <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+	 <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+	 <!-- Beautify This -->
+<div class="container">
+<div class="row" style="margin:2% 0%;">
+<div class="col-md-6 offset-md-3">
+		<div class="card" >
+		<div class="card-header">
+   	<h2 class="text-header"><strong>Enter Your Details</strong></h2>
+  	</div>
+  <div class="card-body">
+  	<span id="danger"></span>
+    <form action="success.html" onsubmit="return validate()">
+			<div class="input-group mb-3">
+		  	<div class="input-group-prepend">
+		    <span class="input-group-text" id="basic-addon1">@</span>
+		  	</div>
+		  	<input type="text" class="form-control in" placeholder="Username" id="username" aria-label="Username" aria-describedby="basic-addon1" required="">
+			</div>
+		  <div class="input-group mb-3">
+		  <input type="email" class="form-control in" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2" required="">
+		  <div class="input-group-append">
+		    <span class="input-group-text" id="basic-addon2">@example.com</span>
+		  </div>
+		  </div>
+		  <div class="input-group mb-3">
+		  <input type="text" class="form-control in" id="phn" placeholder="Phone No." maxlength="10" pattern="[0-9]{10}" title="Phone number length should be 10." required="">
+			</div>
+		  <div class="input-group mb-3">
+		  <input type="password" class="form-control in" name="pswrd" id="pswd" placeholder="Password" pattern=".{6,}" title="Password length should be at least 6 or more." required="">
+			</div>
+			<div class="input-group mb-3">
+		  <input type="password" class="form-control in" name="rpswrd" id="rpswd" pattern=".{6,}" title="Password length should be at least 6 or more." placeholder="Re-type Password" required="">
+			</div>
+		  <div class="form-group">
+		    <textarea class="form-control in" id="msg" rows="5" placeholder="Enter Message" required=""></textarea>
+		  </div>
+		   <div class="form-group">
+		   	<p><strong>Age:</strong></p>
+		   	<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="above" checked>
+				  <label class="form-check-label" for="exampleRadios1">
+				    Above 18
+				  </label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="below">
+				  <label class="form-check-label" for="exampleRadios2">
+				    Below 18
+				  </label>
+				</div>
+		  </div>
+		  <div class="form-group">
+		  	<button type="submit" class="btn btn-primary">Submit</button>
+		  	<button type="reset" class="btn btn-light">Clear</button>
+		  </div>
+		</form>
+  </div>
+	</div>
+</div>
+</div>		
+</div>
+ <!-- Beautify Ends -->
+</body>
+</html>

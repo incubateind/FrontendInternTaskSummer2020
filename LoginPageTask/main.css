@@ -10,11 +10,12 @@ body {
 }
 .log-form {
   width: 100%;
-  min-width: 320px;
-  max-width: 475px;
+  min-width:240px;
+  max-width:500px;
+  height:690px;
   background: #fff;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -32,10 +33,16 @@ h2 {
   -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
   box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
 }
+.form-heading
+{
+
+  text-align:center;
+  font-weight: bold;
+  font-family: 'Work Sans', sans-serif;
+}
 
 form {
   display: block;
   text-align: center;
   width: 100%;
 }
-/* ========================WRITE YOUR CSS FROM HERE======================== */

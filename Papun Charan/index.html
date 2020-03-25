@@ -1,0 +1,123 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- cdn and fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+  <!-- <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt=""> -->
+  <!-- Beautify This -->
+
+  <div class="log-form">
+    <img class="logo mx-auto d-block" src="https://incubateind.com/images/IncubateIND%20Black.png" alt="">
+    <h2 class="font-weight-bold">Enter your details</h2>
+
+
+    <form action="success.html">
+
+      <!--      username    -->
+      <div class="text-center mb-0">
+        <div class="text-center form-group mx-auto">
+          <input class="form-control inpSp" type="text" title="username" placeholder="username" required>
+        </div>
+      </div>
+
+      <!--       email   -->
+      <div class="text-center mb-0">
+        <div class="form-group mx-auto">
+          <input class="form-control inpSp" type="email" title="email" placeholder="email" required>
+        </div>
+      </div>
+
+      <!--   phone no       -->
+      <div class=" text-center mb-0">
+        <div class="form-group mx-auto">
+          <input class="form-control inpSp" type="tel" title="phone no" placeholder="1234567890"
+            pattern="[6-9]{1}[0-9]{9}" required>
+        </div>
+      </div>
+
+      <!--      password    -->
+      <div class=" text-center mb-0">
+        <div class="form-group mx-auto">
+          <input id="password" class="form-control inpSp" type="password" title="password" placeholder="password"
+            onkeyup="validatePassword()" required>
+          <span>
+            <i id="eye" class="fa fa-fw fa-eye field-icon"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- confirm password -->
+      <div class=" text-center mb-0">
+        <div class="form-group mx-auto">
+          <input id="confirm_password" class="form-control inpSp" type="password" title="cnfpassword"
+            placeholder="confirm password" onkeyup="validatePassword()" required>
+        </div>
+      </div>
+
+      <!--     message     -->
+      <div class=" text-center mb-0">
+        <div class="form-group mx-auto">
+          <textarea class="form-control inpSp" name="message" id="message" cols="35" rows="4"
+            placeholder="enter message"></textarea>
+        </div>
+      </div>
+
+      <!--     radio button     -->
+      <div class=" text-center mb-0">
+        <div class="form-group mx-auto">
+          <p class="form-control inpSp">Age</p>
+
+          <div class="custom-control custom-radio custom-control-inline">
+            <input class="form-check-input" type="radio" id="above" name="age" value="above">
+            <label for="above">Above 18</label>
+          </div>
+
+          <div class="custom-control custom-radio custom-control-inline">
+            <input class="form-check-input" type="radio" id="below" name="age" value="below">
+            <label for="below">Below 18</label>
+          </div>
+
+        </div>
+      </div>
+
+      <!--     button     -->
+      <div class=" text-center mb-3">
+        <div class="form-group mx-auto">
+          <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </div>
+
+
+      <!-- existing acount  -->
+      <div class="text-center mt-3">
+        <div class="form-group mx-auto mb-0">
+          <a class="text-black font-weight-bold regStr" href="#">Already have an account</a>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>

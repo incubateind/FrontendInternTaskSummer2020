@@ -1,0 +1,68 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+     <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <!-- Beautify This -->
+  <!--div contents for animations -->
+  <div class="wall">
+    <img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+   <div class="road"></div>
+    <div class="city"></div>
+    <div class="car">
+      <img src="car.png">
+    </div>
+    <div class="wheel">
+      <img src="wheel.png" class="back-wheel">
+      <img src="wheel.png" class="front-wheel">
+    </div> 
+  <!-- form to enter the details -->
+  <div class="log-form">
+    <div>
+      <!-- Validations with the help of main.js file -->
+    <form onsubmit="return validate()">
+      <h2>Enter your details</h2>
+      <div class="form-group">
+        <input class="form-control" placeholder="Name" name="name"  required = "true">
+      </div>
+     <div class="form-group">
+        <input id="email1" type="email" class="form-control"  placeholder="Email"  name="e-mail" required = "true">
+     </div>
+      <div class="form-group">
+          <input id="pwd1" type="password" class="form-control" placeholder="Password" name="password" required = "true">
+      </div>
+      <div class="form-group">
+        <input id="pwd2" type="password" class="form-control" placeholder="Confirm Password" name="confirm password" required = "true">
+      </div>
+      <div class="form-group">
+        <input id="phno" type="phno" class="form-control" maxlength="10" minlength="10" placeholder="Contact" name="contact" required = "true">
+      </div>
+      <textarea name="message" class="form-control" cols="30" rows="1" placeholder="Enter message"></textarea><br>
+      <input type="radio" id="above" name="age" value="above">
+      <label for="above">Age Above 18</label>
+      <input type="radio" id="below" name="age" value="below">
+      <label for="below">Age Below 18</label><br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  </div>
+</div>
+  <!-- Beautify Ends -->
+</body>
+</html>

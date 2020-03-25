@@ -1,0 +1,160 @@
+html, body {
+    height: 100%;
+  }
+  
+  
+  body {
+      background: #353576;
+      background-image: linear-gradient(120deg, #8d67e8 0%, #4dc7d4 100%);
+      color: black;
+      font-family: 'Rubik', sans-serif !important;
+      /* overflow: visible; */
+  }
+  
+  .container{
+  
+      display: flex;
+      height: 100%;
+    align-items: center;
+      justify-content: center;
+  }
+  
+  .form-signin{
+      background: white;
+      padding: 50px 80px;
+      min-height: 620px;
+  }
+  
+  .logo{
+      width: 200px;
+  }
+  .one-line{
+      display: flex;
+  }
+  
+  .forgot{
+      margin-left: auto;
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .form-signin {
+      min-width: 360px;
+      flex-wrap: wrap;
+      padding: 50px 0px;
+    }
+    
+  }
+  
+  /* not active */
+  .nav-pills .pill-1 .nav-link:not(.active) {
+      border: none;
+      color: #6c757d !important;
+      font-weight: 700;
+      width: 0%;
+      transition: width 0.4s;
+  }
+  
+  .nav-pills .pill-2 .nav-link:not(.active) {
+      border: none;
+      color: #6c757d !important;
+      font-weight: 700;
+      width: 0%;
+      transition: width 0.4s;
+  }
+  
+  
+  /* active (faded) */
+  .nav-pills .pill-1 .nav-link {
+      background: white !important;
+         border-bottom: 2px solid #007bff;
+      color: #212529 !important;
+      font-size: 1.5rem;
+      font-weight: 700;
+  }
+  
+  .nav-pills .pill-2 .nav-link {
+      background: white !important;
+         border-bottom: 2px solid #007bff;
+      color: #212529 !important;
+      font-size: 1.5rem;
+      font-weight: 700;
+  } 
+  
+  .nav-pills .pill-1 .nav-link:hover {
+      color: #212529 !important;
+      width: 100%;
+      border-bottom: 2px solid #007bff;
+  
+  }
+  .nav-pills .pill-2 .nav-link:hover {
+        color: #212529 !important;
+      width: 100%;
+      border-bottom: 2px solid #007bff;
+  }
+  
+  
+  .nav{
+      padding: 0 15px !important;
+  }
+  
+  
+/* <!-- These radio has been taken from ab online template    -->
+                 FOR RADIO CSS */
+  .swappy-radios label {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    /* font-size: 2rem; */
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #555;
+  }
+  .swappy-radios label:hover input ~ .radio {
+    opacity: 0.8;
+  }
+  .swappy-radios input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .swappy-radios input:checked ~ span {
+    color: #4dc7d4 ;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+  }
+  .swappy-radios input:checked ~ .radio {
+    background-color: #4dc7d4;
+    opacity: 1 !important;
+  }
+  .swappy-radios input:checked ~ .radio::after {
+    opacity: 1;
+  }
+  .swappy-radios .radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: #c9ded6;
+    border-radius: 50%;
+  }
+  .swappy-radios .radio::after {
+    display: block;
+    content: '';
+    position: absolute;
+    opacity: 0;
+    top: .5rem;
+    left: .5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+  
