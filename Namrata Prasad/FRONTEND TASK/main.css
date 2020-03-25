@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  width: 100%;
+}
+
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+/* styling the background carousel so it remains behond all the text */
+#bgcarousel{
+  z-index: -1;
+  position:fixed;
+	width:100%;
+	height:100%;
+}
+
+/* styling the carousel images to fit as per the screen*/
+.carousel-inner {
+	width:100%;
+	height:100%;
+	z-index:0;
+	overflow:hidden;
+}
+.carousel .carousel-item {
+  z-index:0;
+  background-size: cover;
+  background-position:center center;
+  width:100%;
+   height:100%;
+}
+/* 1st carouselimage */
+.carousel .one{
+  background-image: url('bg1.jpg');
+}
+/* second carouselimage */
+.carousel .two {
+  background-image: url('bg2.jpg');
+}
+
+/* styling the items on the navigation bar */
+.nav-item{
+  width: 215px;
+  text-align: center;
+  color:black;
+}
+
+/* changing the style of the tabs on hover */
+#active,#active:hover,#about:hover,#log:hover{
+  background-color:  #1a5276 ;
+  color: black;
+  border-color: #273746;
+}
+
+/* the navigation items act as links and hence styling the links */
+.nav-link:hover{
+  background-color:  #1a5276 ;
+  color: black;
+}
+
+/* styling the dropdown menu when it is clicked*/
+#navbardrop:focus,#navbardrop:hover{
+    background-color: #1a5276;
+    color: black;
+    border-color: #273746;
+}
+
+/* styling the contents of the dropdown menu*/
+.dropdown-menu{
+  width:200px;
+  background-color: black;
+  border-radius: 10%;
+}
+
+/* changing the style of the contents of dropdown menu on hover */
+.dropdown-item:hover
+{
+  background-color: #2e4053;
+  border-radius: 3%;
+}
+
+.dropdown-menu a{
+  padding:20px;
+  color:white;
+}
+
+/* styling the fullscreen nagivation*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+/* styling and positioning the contents of the fullscreen navigation*/
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 30%;
+}
+
+/* the navigation contents act as links and hence styling the links */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* changing the style of contents on hover */
+.overlay a:hover{
+  color:  #1a5276 ;
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.overlay a:active{
+  transform: translateY(5px);
+}
+
+/* styling the close button for the fullscreen navigation */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* stylingthe div containing the date and time and setting it above all contents */
+#datetime{
+  font-family: "Roboto", "Open Sans";
+  font-size: 150%;
+  position: absolute;
+  text-align: center;
+  color:white;
+  background-color: rgba(0,0,0,0.5);
+  bottom: 0;
+  padding-bottom:2%;
+}
+
+/* styling the btn class in general of the entire page */
+.btn {
+  color: black ;
+  font-size: 120%;
+  font-family:"Lucida Console";
+  transition-duration: 0.5s;
+  position: relative;
+  text-align: center;
+  margin:2%;
+  border-radius:50px;
+}
+
+#button1{
+  background-color: #17202a;
+  color: #839192 ;
+  padding:1% 1.5% 1% 1.5%;
+  z-index: 1;
+}
+.btn:hover{
+  color: white;
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.50), 0 17px 50px 0 rgba(0,0,0,0.50);
+  transform: translateY(-5px);
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:active {
+  transform: translateY(5px);
+}
+
+.btn:focus{
+    outline:none !important;
+    box-shadow: none !important;
+}
+
+#button1:hover{
+  background-color: rgba(100,100,100,0.2);
+  color:white;
+  font-size: 130%;
+}
+
+/* styling the card which displays the main content of the page */
+.card{
+  background-color: transparent;
+  border-color: rgba(100,100,100,0.6);
+  border-width: thick;
+  width: 55%;
+  height:25rem;
+  color:white;
+}
+
+.card-block{
+  padding:7% 2% 7% 2%;
+}
+
+#button2{
+    background-color: black;
+    padding:2%;
+    color:white;
+    position: absolute;
+    bottom: 0;
+    left:35%;
+    right:35%
+}
+#button2:hover{
+    background-color: rgba(100,100,100,0.2);
+}
+#button2:focus{
+  border-color: black;
+}
+
+h3{
+  padding-bottom: 3%;
+}
+
+p{
+  padding: 0 3% 0 3%;
+}
+
+.modal-login{
+  margin-top: 3%;
+}
+
+/* styling the modal header*/
+.modal-login .modal-header{
+  background-image: url('bg3.jpg');
+  background-size: cover;
+  justify-content: center;
+  position: relative;
+  height: 7rem;
+}
+
+/* sizing and positioning the modal avatar icon and also providing the shadow */
+.modal-login .avatar{
+  position: absolute;
+  margin: 0 auto;
+  top:-35%;
+  z-index:9;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+  border-radius: 50%;
+  width:25%;
+}
+
+
+.modal-login .avatar img{
+width: 100%;
+}
+
+/* styling of the modal title*/
+.modal-title{
+text-align: center;
+padding:14%;
+text-shadow: 2.5px 2.5px black;
+font-weight: 500;
+color:  #f39c12;
+margin-left: 10%;
+}
+
+/* styling of the input box*/
+.form-control{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+
+.form-group{
+  position:relative;
+  margin-bottom: 1.rem;
+  width: 100%;
+
+}
+
+/* positioning of the input labels*/
+.ph-area{
+  position: absolute;
+  top:0;
+  transition: 200ms;
+  padding: 7px 0 0 1%;
+  opacity:0.5;
+  width:100%;
+
+}
+
+/* floating the labels on hover or when there is some input by the user*/
+.form-control:hover +.ph-area,
+.form-control:focus +.ph-area,
+.form-control:not(:placeholder-shown) +.ph-area{
+  font-size:80%;
+  transform: translate3d(0,-70%,0);
+  opacity: 1;
+  color:#12a8a8;
+}
+
+/* giving input box shadow when the user focuses on a field*/
+input[type="text"]:focus, textarea[type="textarea"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+  box-shadow: 5px 5px 5px rgba(18, 168, 168,0.4) !important;
+  border-bottom: none;
+}
+
+#one{
+  padding-bottom: 2%;
+}
+
+/* styling the submit button of the form */
+#submitbtn{
+  width:100%;
+  color:white;
+  background-image: linear-gradient(to right, #177579 0%, #0e3739 40%);
+}
+/* changing style on hover */
+#submitbtn:hover{
+  background-image: linear-gradient(to right,#DE6262,#FFB88C);
+  color:black;
+}
+
+/* styling and positioning the close button of the modal */
+#close{
+  margin: 0;
+  font-size: 100%;
+  background-image: linear-gradient(to right,#DE6262,#FFB88C);
+}
+
+/* aligning position of the toggle switch in the footer towards the left */
+.custom-control{
+  float: left;
+}
