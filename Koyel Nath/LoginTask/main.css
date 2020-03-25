@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", helvetica, arial, sans;
+}
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+
+}
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+input{
+  border: 2px solid grey;
+  
+  border-radius: 3px;
+
+}
+
+
+textarea{
+  resize: none;
+  border: 2px solid grey;
+  border-radius: 3px;
+}
+.rows{
+  padding-top: 12px;
+}
+.col1{
+
+  float:left;
+
+  padding-top : 8px;
+}
+
+.col2{
+  float:right;
+  padding-top:  8px;
+}
+
+.col3{
+  float:right;
+  font-style: italic;
+  color: red;
+}
+
+.col
+{
+   text-align: center;
+   display: inline-block;
+   font-weight: bold;
+   color:red;
+   font-size:150%;
+}
+  .rows:after{
+    content: "";
+  display: block;
+  clear:both;
+}
+
+
+.box{
+  background-color: white;
+}
+
+.btn{
+
+   background-color: green;
+   color: white;
+   font-size:20px;
+}
+
+@keyframes bg {
+    0% {
+        background-color: #669999
+
+    }
+
+    20% {
+        background-color: #990000
+    }
+    
+    40% {
+        background-color: #009999
+    }
+
+
+    60% {
+        background-color: #993366
+    }
+
+    90% {
+        background-color: #2766b8
+    }
+
+    100% {
+        background-color: #666699
+    }
+}
+
+body {
+    -webkit-animation: bg 20s infinite;
+    animation: bg 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.required:before{
+  content:"*";
+  font-weight:bold;
+  color:red;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+
+#psw {
+  display:none;
+  margin-top: 10px;
+}
+
+#psw p {
+  padding: 5px 5px;
+  font-size: 15px;
+}
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+h3{
+  color: black;
+}
