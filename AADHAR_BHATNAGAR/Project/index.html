@@ -1,0 +1,95 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+  <div class="log-form">
+    <h2>Enter your details</h2>
+    <form action="https://www.who.int/">
+
+      <div class="row">
+        <div class="col-25">
+          <label for="username">Username</label>
+        </div>
+        <div class="col-75">
+          <input id ="username" type="text" title="username" placeholder="username" />
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input id ="email" type="email" title="email" placeholder="email" pattern=".+@.+\..+"    required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="password-input">Password</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="password-input" title="password" placeholder="password" required/>
+        </div>
+      </div>      
+
+      <div class="row">
+        <div class="col-25">
+          <label for="password-input-confirm">Confirm Password</label>
+        </div>
+        <div class="col-75">
+          <input  type="password" id="password-input-confirm" title="cnfpassword" placeholder="confirm password" required/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="phone">Mobile Number</label>
+        </div>
+        <div class="col-75">
+          <input type="tel" id="mobile" title="phone" placeholder="enter number" required/>
+        </div>
+      </div> 
+
+
+      <div class="row">
+        <div class="col-25">
+          <label for="message">Type your Message</label>
+        </div>
+        <div class="col-75">
+          <textarea name="message" id="message" cols="35" rows="4" placeholder="enter message"></textarea>
+        </div>
+      </div>     
+      
+       <div class="col-25">
+           <p>Age</p>
+       </div>
+
+      <label class="container" for="above">Above 18
+        <input type="radio" checked="checked" id="above" name="age" value="above">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container" for="below">Below 18
+        <input type="radio" id="below" name="age" value="below">
+        <span class="checkmark"></span>
+      </label>
+      <div class="button">
+      <button type="submit" class="btn" id="submit-button" onclick="return Validate()">Submit</button>
+      </div>
+    </form>
+  </div>
+  <!-- Beautify Ends -->
+</body>
+</html>
