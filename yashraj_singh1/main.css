@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.logo{
+  width: 100px;
+}
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 475px;
+  background: orange;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+}
+.log-form {
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background: url("tt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+
+/* ========================WRITE YOUR CSS FROM HERE======================== */
+
+.error{
+  color:red;
+  font-size: 12px;
+}
+.log-form{
+  background: url("to.jpeg");
+}
+.done{
+  background: orange;
+}
+#a1{
+  background: #E30047;
+  text-align: center;
+  color: white;
+
+}
+.jumbotron{
+    height: 15vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+
+}
+body {
+  font-family: "open sans", helvetica, arial, sans;
+  background: url("q.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  margin-top: 20px;
+
+}
+
+.display-4{
+  color: white;
+}
+.button {
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: orange; 
+  border: 2px solid pink;
+}
+
+.button1:hover {
+  background-color: #E30047;
+  color: white;
+}
+
+#cc{
+  color: white;
+}
