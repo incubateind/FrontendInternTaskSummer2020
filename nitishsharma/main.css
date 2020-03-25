@@ -13,14 +13,8 @@ body {
   min-width: 320px;
   max-width: 475px;
   background:rgb(255, 204, 204);
-  position: absolute;
-  top:70%;
-  left:50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin:0 auto;
   border-radius: 10px;
 }
 
@@ -43,12 +37,6 @@ form {
 }
 /* ========================WRITE YOUR CSS FROM HERE======================== */
 
-/* input class for all input boxes to modify their margin*/
-
-.input{
-margin:7px;
-}
-
 /* Adding a hover effect over button*/
 
 .btn:hover{
@@ -59,4 +47,24 @@ margin:7px;
 
 .fas{
   padding:10px;
+}
+
+.logo:hover{
+  transform: scale(1.05);
+}
+i:hover{
+transform: scale(1.25);
+}
+
+input:hover{
+  transform: scale(1.05);
+}
+
+h2:hover{
+  transform: scale(1.25);
+}
+
+.log-form:hover{
+
+  border:2px brown solid;
 }
